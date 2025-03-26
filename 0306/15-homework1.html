@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>홀짝 판별기</h1>
+    <input type="text" name="txt1" id="txt1">
+    <button id="btn">검사</button>
+    <!-- <div></div> -->
+    <p id="p1"></p>
+
+    <script>
+        document.getElementById("btn").addEventListener("click", function () {
+            var inputVal = parseInt(document.getElementById("txt1").value);
+            var result = (inputVal % 2 == 0) ? `${inputVal}는 짝수입니다` : `${inputVal}는 홀수입니다`;
+            // alert(result);
+            // document.write(result);
+            document.getElementById("p1").textContent = result;
+        });
+    </script>
+</body>
+
+</html>

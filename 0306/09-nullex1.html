@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var firstName = null; // false
+        var secondName = undefined; // false
+        var nickName = "갱";
+
+        // firstName = (firstName !== null && firstName!== undefined) ? a : b
+
+        // console.log(firstName || secondName || nickName || '익명의 사용자');
+
+        console.log(firstName ?? secondName ?? nickName ?? '익명의 사용자');
+
+
+        let height = 0;
+        console.log(height || 100); // 100
+        console.log(height ?? 100); // 0
+        // ??: 문자열이나 숫자에서 false를 유효한 값으로 바꿈, null과 undefined를 제외한 나머지를 유효한 값으로 봄
+    </script>
+</body>
+</html>

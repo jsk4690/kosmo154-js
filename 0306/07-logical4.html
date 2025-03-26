@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = 3;
+        var b = 5;
+        // b++은 연산 전에 5 < 3에서 false이므로 a까지 가지 않고 b++만 연산 후 출력됨 >> 절대 하지 말아야 함
+        console.log(((b++) < 3)&&((a++)<5) );
+        console.log(a) // 3
+        console.log(b) // 6
+    </script>
+</body>
+</html>
