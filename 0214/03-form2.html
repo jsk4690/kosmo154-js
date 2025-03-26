@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="./02-form1.html" method="get">
+        <!-- 기본 라디오는 1개씩만 선택 가능 -->
+        <!-- 묶음으로 들어가는 라디오의 name이 전부 같아야 함 -->
+        <!-- 라디오는 value값 고정 > 카테고리 내에서 움직임 -->
+
+        <!-- input:radio#rd$[name="rd" value="rd$"]*3 -->
+        <input type="radio" name="rd" id="rd1" value="rd1">
+        <input type="radio" name="rd" id="rd2" value="rd2">
+        <input type="radio" name="rd" id="rd3" value="rd3">
+        <hr />
+        <!-- 체크박스는 라디오와는 달리 여러 개 선택이 가능 -->
+        <!-- input:checkbox#chk$[name="chk" value="chk$"]*3 -->
+        <input type="checkbox" name="chk" id="chk1" value="chk1">
+        <input type="checkbox" name="chk" id="chk2" value="chk2">
+        <input type="checkbox" name="chk" id="chk3" value="chk3">
+        <!-- <select>
+            <option value=""></option>
+        </select> -->
+        <button>전송</button>
+    </form>
+</body>
+
+</html>

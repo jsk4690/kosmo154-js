@@ -1,0 +1,14 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .circle1 {
+        fill: red;
+        stroke: green;
+        stroke-width: 3;
+        transition: all 1s linear;
+    }
+    .circle1:hover {
+        stroke: blue;
+    }
+    </style>
+<circle cx="100" cy="100" r="80" class="circle1"/>
+</svg>

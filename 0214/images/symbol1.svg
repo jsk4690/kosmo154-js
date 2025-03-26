@@ -1,0 +1,14 @@
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <!-- 재사용 가능한 심볼 정의 -->
+        <!-- 심볼은 자체적으로 뷰박스를 갖는 것이 가능함 > g처럼 그룹화하지만 자체적으로 변형이 가능함 -->
+        <symbol id="star" viewBox="0 0 24 24">
+            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+        </symbol>
+    </defs>    
+    <!-- use를 통해 접근을 할 땐 무조건 id로 지정해야 함 -->
+    <use href="#star" x="0" y="0" width="50" height="50" fill="gold" />
+    <use href="#star" x="60" y="0" width="50" height="50" fill="red" />
+    <use href="#star" x="120" y="0" width="50" height="50" fill="blue" />
+    <use href="#star" x="180" y="0" width="50" height="50" fill="green" />
+</svg>

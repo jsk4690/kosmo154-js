@@ -1,0 +1,5 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <rect x="10" y="10" width="80" height="80" fill="none" stroke="black" stroke-width="5" stroke-linejoin="round" stroke-dasharray="5,15" />
+<!-- dasharray의 앞의 값은 선의 길이, 뒤에는 공백의 길이 -->
+    <rect x="110" y="10" width="80" height="80" fill="none" stroke="black" stroke-width="5" stroke-linejoin="round" stroke-dasharray="5,15" stroke-dashoffset="3" stroke-opacity="0.3"/>
+</svg>
