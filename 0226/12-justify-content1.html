@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="default.css">
+    <style>
+        .flex-container1 {
+            display: flex;
+            /* 각각의 item간의 간격을 균등하게, item 사이의 간격만 봄, 양끝의 컨텐츠는 양옆에 붙음 */
+            justify-content: space-between;
+        }
+
+        .flex-container2 {
+            display: flex;
+            /* item을 기준으로 좌우 공간이 균등하게 > 좌우 공간을 균등하게 배치하므로 가운데에 있는 컨텐츠는 양끝 여백의 두 배 */
+            justify-content: space-around;
+        }
+
+        .flex-container3 {
+            display: flex;
+            /* 모든 공간을 균등하게 배치, between과 유사하지만 evenly는 양끝도 균등하게 분할함 */
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <!-- div.flex-container>div.flex-item*3 -->
+    <div class="flex-container1">
+        <div class="flex-item">AAAAAAAAA</div>
+        <div class="flex-item">BBB</div>
+        <div class="flex-item">CCCCC</div>
+    </div>
+    <div class="flex-container2">
+        <div class="flex-item">AAAAAAAAA</div>
+        <div class="flex-item">BBB</div>
+        <div class="flex-item">CCCCC</div>
+    </div>
+    <div class="flex-container3">
+        <div class="flex-item">AAAAAAAAA</div>
+        <div class="flex-item">BBB</div>
+        <div class="flex-item">CCCCC</div>
+    </div>
+</body>
+</html>

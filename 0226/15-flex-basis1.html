@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="default.css">
+    <style>
+        .flex-container {
+            display: flex;
+        }
+
+        .f2 {
+            flex-direction: column;
+        }
+
+        .flex-item1 {
+            width: 300px;
+        }
+
+        .flex-item2 {
+            flex-basis: 300px;
+            /* 축이 있는 위치에 따라서 높이, 너비가 달라짐 
+            축이 column이면 flex-basis가 나타내는 것이 row */
+        }
+
+        .flex-item3 {
+            min-width: 150px;
+            /* max-width: 400px; max는 절대 안 먹힘*/
+            width: 400px;
+            /* flex-item width 성질이 바뀌는 부분
+            1. flex-item의 컨텐츠 중심으로 바뀜
+            2. flex-item이 배치가 되는 공간이 줄어들 경우 컨텐츠만 남음
+            3. 더 이상 소모할 공백이 존재하지 않을 경우 그때서야 블럭의 축소를 중지하고 스크롤바가 띄워진다.
+            4. 만약 min-width를 통해 블럭의 크기를 설정한 경우 min-width의 크기가 컨텐츠 영역보다 우선시 된다. */
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container f2">
+        <div class="flex-item flex-item1">AAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+        <div class="flex-item flex-item1">BBB</div>
+        <div class="flex-item flex-item1">CCCCCCCCC</div>
+    </div>
+    <div class="flex-container f2">
+        <div class="flex-item flex-item2">AAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+        <div class="flex-item flex-item2">BBB</div>
+        <div class="flex-item flex-item2">CCCCCCCCC</div>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item flex-item3">AAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+        <div class="flex-item flex-item3">BBB</div>
+        <div class="flex-item flex-item3">CCCCCCCCC</div>
+    </div>
+</body>
+</html>

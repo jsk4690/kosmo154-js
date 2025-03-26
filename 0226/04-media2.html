@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+
+        .div1 {
+            background-color: brown;
+        }
+
+        @media (max-width: 1024px) {
+            .div1 {
+                background-color: yellowgreen;
+            }
+        }
+
+        @media (max-width: 650px) {
+            .div1 {
+                background-color: green;
+            }
+        }
+        /* 웹 개발할 때 미디어쿼리: 대부분 데스크탑(큰 화면)에서 핸드폰(작은 화면) 순서로 개발하는 사람들은 'max-width'로 지정, 그 반대는 'min-width' */
+    </style>
+</head>
+<body>
+    <div class="div1"></div>
+</body>
+</html>

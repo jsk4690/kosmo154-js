@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="default.css">
+    <style>
+        .flex-container {
+            display: flex;
+            height: 400px;
+            /* flex-direction: column; */
+            /* align-items: stretch; */
+            /* 메인축을 기준으로 블럭이 위쪽으로 */
+            /* align-items: flex-start; */
+            /* 메인축을 기준으로 블록이 아래쪽으로 */
+            /* align-items: flex-end; */
+            /* 중앙 배치 */
+            /* align-items: center; */
+            /* 컨텐츠의 윗변을 기준으로 정렬 */
+            /* align-items: baseline; */
+            flex-direction: column-reverse;
+            justify-content: flex-start;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-item" style="font-size: 2rem">AAAAAAAAA</div>
+        <div class="flex-item" style="font-size: 1rem">BBB</div>
+        <div class="flex-item" style="font-size: 3rem">CCCCC</div>
+    </div>
+</body>
+
+</html>

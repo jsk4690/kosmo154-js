@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="default.css">
+    <style>
+        .flex-container {
+            display: flex;
+            /* flex-direction: row-reverse; */
+            flex-direction: column;
+            /* flex-direction이 column일 경우는 줄바꿈을 하지 않지만, row나 row-reverse는 배치가 바뀜 */
+            /* 줄바꿈 하지 않음: 기본값 > 화면을 계속 줄여도 줄바꿈을 안 함 */
+            /* flex-wrap: nowrap; */
+            /* 위에서 아래로 자연스럽게 줄바꿈 */
+            flex-wrap: wrap;
+            /* 아래에서 위로 줄바꿈 */
+            /* flex-wrap: wrap-reverse; */
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">AAAAAAAAA</div>
+        <div class="flex-item">BBB</div>
+        <div class="flex-item">CCCCC</div>
+        <div class="flex-item">DDDDDDDDDDDDDD</div>
+        <div class="flex-item">EEEEEEEEE</div>
+        <div class="flex-item">FFFFFFFFFFFF</div>
+        <div class="flex-item">GGG</div>
+        <div class="flex-item">HHHHHHHHHH</div>
+        <div class="flex-item">IIIIIIII</div>
+    </div>
+</body>
+</html>

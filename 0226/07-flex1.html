@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="default.css">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            display: flex;
+            /* flex는 해당 줄의 영역을 그대로 가져가지만 inline은 좌에서 우로 배치되기 때문에 다른 컨텐츠를 추가하면 바로 옆으로 붙음 (flex는 다음 줄에 붙음) */
+            /* display: inline-flex; */
+            flex-direction: column;
+        }
+
+        /* .flex-container {
+            display: flex;
+        }
+        화면 크기에 따라 컨텐츠 배치가 달라짐
+        @media (max-width: 700px) {
+            .flex-container {
+                flex-direction: column;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">AAAAAAAAA</div>
+        <div class="flex-item" style="width:200px">BBB</div>
+        <div class="flex-item">CCCCC</div>
+    </div>
+    <p style="display:inline;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum voluptatum rerum in nisi voluptas ad, perferendis itaque libero quibusdam, ea quia optio, id provident natus a tempore iure? Tenetur, adipisci.
+    </p>
+</body>
+</html>

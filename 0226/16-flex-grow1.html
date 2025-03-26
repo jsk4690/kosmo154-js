@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="default.css">
+    <style>
+        .flex-container {
+            display: flex;
+        }
+
+        .flex-item {
+            flex-grow: 1;
+            /* 컨테이너 내 컨텐츠를 제외한 나머지 공백 영역을 아이템에 적힌 flex-grow 만큼 배분 */
+        }
+
+        .flex-item:nth-child(3) {
+            flex-grow: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-item">AAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+        <div class="flex-item">BBB</div>
+        <div class="flex-item">CCCCCCCCC</div>
+    </div>
+</body>
+
+</html>
