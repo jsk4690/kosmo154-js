@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div id="middle">Middle</div>
+    </div>
+
+    <script>
+        const container = document.getElementById("container");
+        const middle = document.getElementById("middle");
+        const beforeMiddle = document.createElement("div");
+        beforeMiddle.textContent = "Before Middle";
+        container.insertBefore(beforeMiddle, middle);
+        
+        console.log("beforeMiddle.nextElementSibling:", beforeMiddle.nextElementSibling.id);
+    </script>
+</body>
+</html>
