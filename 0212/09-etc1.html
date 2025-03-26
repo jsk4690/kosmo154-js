@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="./08-check1.html" method="get">
+        <!-- ul>li>(label[for="color1"]{색상선택}+input:color#color1[name="color1"]) -->
+        <ul>
+            <li><label for="color1">색상선택</label>
+                <input type="color" name="color1" id="color1">
+            </li>
+            <!-- li>(label[for="data$"]+input:date#date1[name=date1]) -->
+            <li><label for="data1">년월일</label>
+                <input type="date" name="date1" id="date1">
+            </li>
+            <!-- li>(label[for="data2"]{달}+input:month#date2[name=date2]) -->
+            <li><label for="data2">달</label>
+                <input type="month" name="date2" id="date2">
+            </li>
+            <!-- li>(label[for="data3"]{주}+input:week#date3[name=date3]) -->
+            <li><label for="data3">주</label>
+                <input type="week" name="date3" id="date3">
+            </li>
+            <!-- li>(label[for="data4"]{시간}+input:time#date4[name=date4]) -->
+            <li><label for="data4">시간</label>
+                <input type="time" name="date4" id="date4">
+            </li>
+            <!-- li>(label[for="data5"]{년월일시분초}+input:datetime-local#date5[name=date5]) -->
+            <li><label for="data5">년월일시분초</label>
+                <input type="datetime-local" name="date5" id="date5">
+            </li>
+        </ul>
+        <!-- input type은 거의 사용하지 않음 -->
+        <input type="submit" value="제출"> <button>제출</button>
+        <button type="submit">제출</button>
+        <input type="reset" value="리셋">
+        <button type="reset">리셋</button>
+        <input type="button" value="버튼">
+        <button type="button">버튼</button>
+        <input type="image" src="" alt="">
+    </form>
+</body>
+
+</html>

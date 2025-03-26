@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="./11-attr1.html" method="get">
+        <input type="text" name="title" id="title" value="이것은 제목" readonly><br>
+        <input type="text" name="content" id="content" required><br>
+        <!-- 아래의 문법에서는 소문자 a부터 z까지 3글자에서 7글자만 통과 가능: regular expression -->
+        <!-- 1. 정규표현식의 규칙과 required는 별개 - 정규표현식과 required 두 가지를 같이 운용 -->
+        <input type="text" name="cn2" id="cn2" pattern="[a-z]{3,7}" required><br>
+        <!-- 2. 유효성 검사에 대한 안내 문구는 title로 지정 -->
+        <input type="text" name="cn3" id="cn3" pattern="[가-힣]{3,7}" required title="한글 3자 이상 7자 이하"><br>
+        <button>전송</button>
+    </form>
+</body>
+
+</html>
+<!-- required: 한 글자라도 입력
+pattern: 우리가 쓰고자 하는 패턴식을 정리. 입력 범위 -->
+
+<!-- []: 실제 값들에 대한 범위 ex)[a-zA-Z가-힣]: a부터 z까지 A부터 Z까지
+     [\s]: 공백 문자 포함
+     {}: 반복 횟수 ex) {4}: 안에 있는 내용을 4번 반복, {3,10}: 3번 이상 10번 이하 반복 -->

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 라디오는 동기화되는 애들끼리는 name이 같아야 함 -->
+     <!-- 라디오는 무조건 value값을 넣는 걸 권장 -->
+      <!-- 라디오는 name이랑 id값이 달라야 함 -->
+    <!-- form:get>((input:radio#radio$+label[for="radio$"]{라디오$})*3+button{전송}) -->
+    <form action="./06-form4.html" method="get">
+        <input type="radio" name="rd" id="radio1" value="rd1" checked>
+        <label for="radio1">라디오1</label>
+        <input type="radio" name="rd" id="radio2" value="rd2">
+        <label for="radio2">라디오2</label>
+        <input type="radio" name="rd" id="radio3" value="rd3">
+        <label for="radio3">라디오3</label>
+        <button>전송</button>
+    </form>
+</body>
+</html>

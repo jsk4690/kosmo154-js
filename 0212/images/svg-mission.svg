@@ -1,0 +1,10 @@
+<svg viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg">
+    <!-- 상하좌우 여백이 20 -->
+    <circle cx="70" cy="70" r="50" fill="blue" />
+    <path d="M20 20 L120 20 L70 120 Z" fill="red" />
+
+
+    <!-- 삼각형 -->
+    <!-- <circle cx="70" cy="70" r="50" fill="green" />
+    <path d="M20 120 L70 20 L120 120 Z" fill="purple" /> -->
+</svg>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- action의 #은 a href와 같은 링크 기능 -->
+     <!-- url에 사이트의 정보가 담겨있으면 method=get, 없으면 method=post (body의 페이로드에 있음) -->
+      <!-- get: 데이터 limit, 공유, 접근성 높음 | method: 데이터 limit이 get보다는 높음, 대용량 데이터, 접근성 낮음, 보안성이 높은 개인 사이트, 대용량 데이터를 업로드하는 데 적합 -->
+    <form method="get" action="#" autocomplete="off">
+       <label>아이디 : <input type="text" name="id"></label><br>
+       <label for="pw">패스워드 : </label> 
+       <input type="password" name="pw" id="pw"><br>>
+        <!-- name은 가급적 id랑 값이 일치하게 -->
+        <button type="submit">확인</button>
+        <button type="reset">리셋</button>
+        <button type="button">일반 버튼</button>
+    </form>
+</body>
+
+</html>

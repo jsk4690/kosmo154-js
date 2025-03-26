@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- name은 전송되는 값의 이름 id는 해당 태그의 고유한 명칭 -->
+     <!-- name은 라디오랑 똑같이 이름 통일 -->
+      <!-- 체크박스는 하나의 이름에 복수의 값을 가짐 -->
+    <!-- form:get>((label[for="chk$"]{체크$}+input:checkbox#chk$[name="chk" value="chk$"])*3+button{전송}) -->
+    <form action="./07-radio1.html" method="get">
+        <label for="chk1">체크1</label>
+        <input type="checkbox" name="chk" id="chk1" value="chk1" checked>
+        <label for="chk2">체크2</label>
+        <input type="checkbox" name="chk" id="chk2" value="chk2">
+        <label for="chk3">체크3</label>
+        <input type="checkbox" name="chk" id="chk3" value="chk3">
+        <button>전송</button>
+    </form>
+</body>
+</html>
