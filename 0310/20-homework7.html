@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>1부터 n까지 짝수만 출력하기</h1>
+    <input type="number" name="even" id="even" placeholder="숫자 n 입력">
+    <button onclick="btn()">짝수 출력</button>
+
+    <script>
+        function btn() {
+            var evenNum = parseInt(document.getElementById("even").value);
+            var evenNumbers = "";
+            for (var i = 1; i <= evenNum; i++) {
+                if (i % 2 === 0) {
+                    evenNumbers += i + " ";
+            }
+        }
+        alert("짝수 목록: " + evenNumbers);
+    }
+    </script>
+</body>
+</html>

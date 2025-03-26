@@ -1,0 +1,47 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="nm" id="nm">
+    <button onclick="calculateSum()">Calculate Sum</button>
+
+    <script>
+        function calculateSum() {
+            var n = parseInt(document.getElementById("nm").value);
+            let sum = 0;
+            for (let i = 1; i <= n; i++) {
+                sum += i;
+            }
+            alert(`1부터 ${n}까지의 합은 ${sum}입니다.`);
+        }
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>1부터 n까지의 합 구하기</h1>
+    <input type="number" name="num1" id="num1" placeholder="숫자 n 입력">
+    <button onclick="calcSum()">합계 계산</button>
+
+    <script>
+        function calcSum() {
+            var n = Number(document.getElementById("num1").value);
+            var sum = 0;
+            for (var i = 1; i <= n; i++) {
+                sum += i;
+            }
+            alert("합계: " + sum);
+        }
+    </script>
+</body>
+</html>

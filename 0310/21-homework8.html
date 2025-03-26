@@ -1,0 +1,67 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>총합과 평균 계산하기</h1>
+    <input type="number" name="arr" id="arr" placeholder="숫자 n을 입력하세요">
+    <button onclick="ta">총합과 평균</button>
+    <div id="result"></div>
+
+    <script>
+        function ta() {
+            var n = parseInt(document.getElementById("arr").value);
+            var total = 0;
+            var avg = 0;
+            for (var i = 0; i <= n; i++) {
+                total += i;
+                avg = total / n;
+            }
+            document.getElementById("result").innerHTML = "총합: " + total + "평균: " + avg;
+        }
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>총합과 평균 계산하기</h1>
+    <input type="text" id="arr" placeholder="숫자들을 콤마로 구분">
+    <button onclick="calcSumAvg()">계산하기</button>
+    <div id="result"></div>
+
+    <script>
+        function calcSumAvg() {
+            var input = document.getElementById("arr").value;
+            var total = 0;
+            var count = 0;
+            var numberStr = "";
+            input += ",";
+
+            for (var i=0; i < input.length; i++) {
+                var ch = input.charAt(i);
+                if (ch !== ",") {
+                    numberStr += ch;
+                } else {
+                    if (numberStr.trim() !== "") {
+                        total += Number(numberStr.trim());
+                        count++;
+                    }
+                    numberStr = "";
+                }
+            }
+            var avg = count ? total / count : 0;
+            document.getElementById("result").innerHTML = "총합 " + total + "평균: " + avg;
+            }
+    </script>
+</body>
+</html>

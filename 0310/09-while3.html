@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var i = 0;
+        // while (i < 5) {
+        //     i++;
+        //     // 안에 있는 로직이 한 줄인 단순 if문은 {} 생략 가능
+        //     if (i === 3) break;
+        //     console.log("출력"+i);
+        // }
+        while (i < 5) {
+            i++;
+            if (i === 3) continue;
+            // i++; >> 무한 루프
+            console.log("출력"+i);
+            // continue: 아래 있는 로직이 무엇이든 중지를 하고, 다시 위로 올라감
+            // continue가 증감 연산자 위에 있으면 무한 루프 (증감 연산자를 가장 위로 올리는 습관 들이기)
+        }
+    </script>
+</body>
+</html>

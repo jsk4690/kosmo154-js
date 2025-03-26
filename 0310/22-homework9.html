@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>주어진 숫자의 각 자리 합 구하기</h1>
+    <input type="text" name="nm" id="nm" placeholder="숫자 num을 입력하세요">
+    <button onclick="plus()">각 자리 합</button>
+
+    <script>
+        function plus() {
+            var numStr = document.getElementById("nm").value;
+            var sum = 0;
+            for (var i = 0; i < numStr.length; i++) {
+                var ch = numStr.charAt(i);
+                if (ch >="0" && ch <= "9") {
+                    sum +=Number(ch);
+                }
+            }
+            alert("자릿수 합: " + sum);
+        }
+    </script>
+</body>
+</html>

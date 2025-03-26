@@ -1,0 +1,53 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>1부터 n까지 홀수 출력하기</h1>
+    <input type="number" name="nm" id="nm" placeholder="숫자 n 입력">
+    <button onclick="odd()">홀수 출력</button>
+
+    <script>
+        function odd() {
+            var n = parseInt(document.getElementById("nm").value);
+            var oddNumbers = "";
+            for (var i = 1; i <= n; i++) {
+                if (i % 2 !== 0) {
+                    oddNumbers += i + " ";
+                }
+            }            
+        alert(`홀수 목록: ` + oddNumbers);
+        }
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>1부터 n까지 홀수 출력하기</h1>
+    <input type="number" name="num2" id="num2" placeholder="숫자 n 입력">
+    <button onclick="printOdd()">홀수 입력</button>
+
+    <script>
+        function printOdd() {
+            var n = Number(document.getElementById("num2").value);
+            var result = "";
+            for (var i = 1; i <= n; i++) {
+                if (i % 2 !== 0) {
+                    result += i + " ";
+                }
+            }
+            alert("홀수 목록: " + result.trim());
+        }
+    </script>
+</body>
+</html>

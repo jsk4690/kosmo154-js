@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+<input type="number" name="tr" id="tr" placeholder="행의 수">
+<input type="number" name="td" id="td" placeholder="열의 수">
+<button id="btn">버튼</button>
+<div id="table-container"></div>
+<script>
+    document.getElementById("btn").addEventListener("click", function(){
+        const tr = document.getElementById("tr").value;
+        const td = document.getElementById("td").value;
+        let table = "<table>";
+        for (let i = 0; i < tr; i++) {
+            table += "<tr>";
+            for (let j = 0; j < td; j++) {
+                table += `<td>${i}-${j}</td>`;
+            }
+            table += "</tr>";
+        }
+        table += "</table>";
+        document.getElementById("table-container").innerHTML = table;
+    });
+</script>
+</body>
+</html>
