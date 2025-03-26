@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="myList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <button id="addItemBtn">항목 추가</button>
+
+    <script>
+        // 버튼 선언
+        const addItemBtn = document.getElementById("addItemBtn");
+
+        // 버튼 이벤트
+        addItemBtn.addEventListener("click", function() {
+        // ul과 새로 추가할 리스트 선언
+        const myList = document.getElementById("myList");
+        const newLi = document.createElement("li");
+        newLi.textContent = "New Item";
+        // 새로 추가할 리스트를 ul 안에 넣기
+        myList.appendChild(newLi);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>p1</p>
+    <p>p2</p>
+    <p>p3</p>
+    <p>p4</p>
+    <p>p5</p>
+
+    <script>
+        const ps = document.querySelectorAll("p");
+
+        ps.forEach (function(p) {
+            // forEach, map, filter와 같은 배열 메서드들은 각 요소를 자동으로 매개변수로 전달하기 때문에 function() 안에 변수를 써줘야 함
+            p.style.color = "red";
+        });
+    </script>
+</body>
+</html>

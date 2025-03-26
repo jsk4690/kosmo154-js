@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 실행이 되지 않으므로 hoisting이 불가능
+        const member1 = new Member();
+        // class: 객체를 찍어내는 틀
+        class Member {
+            getName() {
+                return "정수경";
+            }
+        };
+
+        // 클래스의 경우
+        // - 두 가지 방식으로 선언이 가능하며 이 기능은 함수와 동일하다.
+        // 1. Class 선언 방식
+        // 2. Class 표현 방식
+
+        // 함수는 hoisting이 되지만, class는 되지 않음
+        // const Member = class {
+        //     getName() {
+        //         return "정수경";
+        //     }
+        // }
+
+        // const member1 = new Member();
+
+        console.log(member1.getName()); // 정수경
+    </script>
+</body>
+</html>

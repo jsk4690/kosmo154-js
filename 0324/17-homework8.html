@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="parentList">
+        <li>li 1</li>
+        <li>li 2</li>
+        <li>li 3</li>
+        <li>li 4</li>
+        <li>li 5</li>
+    </ul>
+
+    <script>
+        // ul 요소 불러오기
+        const parentList = document.getElementById("parentList");
+
+        // e.target: parentList
+        // 이 상황에서는 굳이 e.target 안 써줘도 됨
+        // e.target.tagName.toLowerCase() === "li" => 클릭된 요소의 태그가 li인지 확인
+        // tagName은 항상 대문자로 반환되므로 toLowerCase를 써줘야 함 (toLowerCase를 사용하지 않으면 비교할 때 "Li"와 "li" 구분해야 함 => toLowerCase를 사용하면 비교가 편리해짐)
+        // function 안에 e와 같은 문자를 넣어주지 않으면 e.target과 같은 이벤트를 사용할 수 없음
+
+        // ul을 클릭
+        parentList.addEventListener("click", function(e) {
+            
+        // li의 배경색을 yellow로 변경
+            if (e.target && e.target.tagName.toLowerCase() === "li") {
+                // parentList를 가리키고 parentList 안의 태그 네임이 li라면
+                e.target.style.backgroundColor = "yellow";
+            }
+        });
+    </script>
+</body>
+</html>

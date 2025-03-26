@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #toggleElement {
+            border: 1px solid #CCC;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="toggleElement">보이거나 숨김</div>
+    <button id="toggleBtn">토글</button>
+
+    <script>
+        const toggleElement = document.getElementById("toggleElement");
+        const toggleBtn = document.getElementById("toggleBtn");
+
+        toggleBtn.addEventListener("click", function() {
+            if (window.getComputedStyle(toggleElement).display === "none") {
+                toggleElement.style.display = "block";
+            } else {
+                toggleElement.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>
