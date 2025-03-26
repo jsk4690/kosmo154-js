@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1 {
+            /* width는 컨텐츠 기준 width를 200으로 잡아도 200+padding(10*2)+border(1*2)=222 */
+            width: 200px;
+            height: 100px;
+            padding: 10px;
+            border: 1px solid black;
+            /* border를 기준으로 크기를 정한다. padding과 border를 뺀 나머지*/
+            box-sizing: border-box;
+            /* 전체 크기 영역에 포함되지 않음. 컨텐츠에 해당되지 않음. outline을 기준으로 크기를 정한다. */
+            outline: 5px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1"></div>
+</body>
+</html>

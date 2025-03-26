@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px solid black;
+        }
+
+        .head {
+            width: 600px;
+        }
+
+        .div1 {
+            float: left;
+        }
+
+        .div2 {
+            float: right;
+        }
+
+        .p1 {
+            clear: both;
+            /* div3에서 clear: both를 지정해 주어서 p1은 굳이 지정 안 해줘도 됨 */
+        }
+
+        .div3 {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <!-- div.head>(div.div${내용$}*3) -->
+    <div class="head">
+        <div class="div1">내용1</div>
+        <div class="div2">내용2</div>
+        <div class="div3">내용3</div>
+        <p class="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam a animi fugiat commodi perferendis exercitationem. Facere a delectus voluptate ea? Totam, atque. Veritatis non quas perferendis, asperiores quos iusto fugit!</p>
+    </div>
+</body>
+</html>

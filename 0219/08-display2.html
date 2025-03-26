@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px solid black;
+        }
+
+        .table1 {
+            display: table;
+        }
+
+        .tr1 {
+            display: table-row;
+        }
+
+        .td1 {
+            display: table-cell;
+        }
+
+        @media (max-width: 700px) {
+            .table1, .tr1, .td1 {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- div.table1>div.tr1*2>div.td1{컨텐츠$}*3 -->
+    <div class="table1">
+        <div class="tr1">
+            <div class="td1">컨텐츠1</div>
+            <div class="td1">컨텐츠2</div>
+            <div class="td1">컨텐츠3</div>
+        </div>
+        <div class="tr1">
+            <div class="td1">컨텐츠1</div>
+            <div class="td1">컨텐츠2</div>
+            <div class="td1">컨텐츠3</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            width: 300px;
+            margin: 20px 0;
+            border: 1px solid darkblue;
+            padding: 30px;
+        }
+
+        .item {
+            width: auto;
+            /* width: auto와 width: 100%는 같은 결과가 아님
+            100%는 padding값만큼 더 삐져나감 */
+            padding: 20px;
+            margin: 0 50px;
+            border: 15px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- div.wrapper>div.item{안녕하세요 반갑습니다.} -->
+    <div class="wrapper">
+        <div class="item">안녕하세요 반갑습니다.</div>
+    </div>
+</body>
+</html>

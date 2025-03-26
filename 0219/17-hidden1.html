@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px solid black;
+            width: 300px;
+            height: 200px;
+        }
+
+        .div1 {
+            /* display: none; */
+            /* 해당 내용이 문서상에서 사라짐 */
+            /* display와 hidden 모두 해당 내용이 사라지지만, display는 다음의 내용이 그 자리를 채우고, hidden은 공간은 그대로 유지 */
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <!-- div.div${내용$}*2 -->
+    <div class="div1">내용1</div>
+    <div class="div2">내용2</div>
+</body>
+</html>

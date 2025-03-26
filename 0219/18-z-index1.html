@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+            position: absolute;
+        }
+
+        /* 먼저 선언한 것이 먼저 쌓임 */
+        /* z-index로 쌓이는 순서를 변경 */
+
+
+        .div1 {
+            background-color: lightblue;
+            z-index: 99;
+        }
+
+        .div2 {
+            background-color: lightcoral;
+            top: 50px;
+            left: 20px;
+            z-index: 80;
+        }
+
+        .div3 {
+            background-color: yellowgreen;
+            top: 20px;
+            left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+</body>
+</html>

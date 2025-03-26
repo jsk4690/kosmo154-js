@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+        }
+
+        .div1 {
+            border: 5px dashed red;
+        }
+
+        .div2 {
+            border: 5px double blue;
+        }
+
+        .div3 {
+            border: 10px groove green;
+        }
+
+        .div4 {
+            border: 10px ridge lightcoral;
+        }
+
+        .div5 {
+            /* border-width: 5px 10px 5px 10px; */
+            /* border-width: 5px 10px; */
+            /* 마주보고 있는 면의 속성이 같은 경우 2개만 써줘도 ok */
+            border-width: 5px 10px 20px;
+            /* 세 자릿수만 넣었을 경우, 마주보는 면의 속성값을 그대로 가져옴 > 위의 경우에 마지막 속성값은 10px */
+            border-style: groove;
+            border-color: cadetblue;
+        }
+
+        .div6 {
+            border-width: 5px 10px 20px;
+            border-style: groove solid dotted dashed;
+            border-color: red green blue yellow;
+        }
+
+        .div7 {
+            border: none;
+            border-bottom: 5px groove blue;
+            /* border-top: ; */
+            /* border-left: ; */
+            /* border-right: ; */
+            /* border-left-width: ; 위는 해당하는 변만 출력되지만 옆의 태그는 해당하는 변만 값이 적용되고 나머지는 기본값을 가짐 */
+        }
+
+        .div8 {
+            border: 5px solid blue;
+            outline: 5px solid red;
+            /* border와 outline의 가장 큰 차이는 영역에 포함이 되느냐 되지 않느냐 */
+            /* outline은 영역에 포함되지 않는 경우가 많음 */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- div.div$*4 -->
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="div4"></div>
+    <div class="div5"></div>
+    <div class="div6"></div>
+    <div class="div7"></div>
+    <div class="div8"></div>
+</body>
+
+</html>
