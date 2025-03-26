@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #rt {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" name="rt" id="rt">
+
+    <script>
+        document.getElementById("rt").addEventListener("focus", function(){
+            rt.style.outlineColor = "green";
+        });
+
+        document.getElementById("rt").addEventListener("blur", function(){
+            rt.style.outlineColor = "black";
+        });
+    </script>
+</body>
+</html>

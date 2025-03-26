@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #p1 {
+            font-size: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <p id="p1">버튼으로 텍스트 크기 조절하기</p>
+    <button id="zi">확대</button>
+    <button id="zo">축소</button>
+
+    <script>
+        document.getElementById("zi").addEventListener("click", function(){
+            p1.style.fontSize = "5rem";
+        });
+
+        document.getElementById("zo").addEventListener("click", function(){
+            p1.style.fontSize = "1rem";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 전역 scope
+        var x = 'global';
+
+        function foo() {
+            // 지역 scope
+            var y = 'function scope';
+            console.log(x);
+            console.log(y);
+        }
+
+        foo();
+        console.log(x);
+    </script>
+</body>
+</html>

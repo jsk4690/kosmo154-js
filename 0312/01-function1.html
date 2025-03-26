@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. 함수의 기본 형태
+        // - function funcname(param1, param2...) {
+        //     ...
+        //     logic
+        //     ...
+        //     return return-value;
+        //  }
+        // 선언과 사용 (함수: 선언을 하거나 변수명을 지어줌)
+        function func1() {
+            console.log("이것은 기본 function 형태입니다.");
+        }
+
+        // 호출
+        func1();
+        // func1();
+        // func1();
+        // func1();
+        // func1();
+        // 적은 횟수 만큼 반복됨
+
+
+
+        // 선언2 -> 익명 함수 표현식(함수에 이름이 없음, 가명으로 지어지고 이후에 변수의 이름을 별도로 지정해 줌)
+        var func2 = function() {
+            console.log("이것은 기본 function2 형태입니다.");
+        }
+
+        // 호출
+        func2();
+
+        // 함수 이름을 짓는 방법
+        /*
+             - 첫 글자가 대문자가 될 수 없음
+             - 숫자가 와서도 안 됨
+             - 예약어로는 사용이 불가능
+             - 특수문자는 언더바('_') 외에는 사용하지 않음
+        */
+
+        // 기명 함수
+        var func3 = function var1() {}
+    </script>
+</body>
+</html>

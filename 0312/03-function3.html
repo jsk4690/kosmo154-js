@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // return
+        // 1. 내가 호출한 지점에서 내 연산의 결과값을 호출한 곳으로 반환하는 것
+        // 2. 리턴 타입의 결과값을 다른 곳에서 그대로 이용 가능하다.
+        // function의 파라미터에 function을 선언하는 로직
+        function func1(a) {
+            return a+3;
+        }
+
+        console.log(`3 더하기 3은 ${func1(3)}`);
+
+        function func2(a, b, c, d) {
+            console.log(`각 데이터 값 출력 : ${a} ${b} ${c} ${d}`);
+        }
+
+        func2(1, 2, 3, func1(1)); // >> 1 2 3 4
+
+        // 한 개의 값만을 리턴함
+        // 3. 원칙적으로는 return 값은 무조건 1개
+        function func3(a, b, c, d) {
+            return a+b, c+d;
+        }
+
+        var var1 =  func3(1, 2, 3, 4);
+        console.log(var1);
+    </script>
+</body>
+</html>

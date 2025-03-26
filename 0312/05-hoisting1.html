@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let: 재선언 불가, 재할당 가능 > 이름이 같으면 충돌 > 에러
+        // const: 재선언 불가, 재할당 불가 > 이름이 같으면 충돌 > 에러
+        // 하지만 var은 뒤에 나온 값이 앞에 나온 값을 덮음
+        console.log(func1()); // aaa
+        console.log(func2); // undefined
+        // console.log(func2()); // 출력이 되지 않음
+
+        function func1() {
+            return 'aaa';
+        }
+        var func2 = function() {
+            return "bbb";
+        }
+
+        // window의 a1에 적재됨
+        var a1 = "abcd";
+    </script>
+</body>
+</html>
