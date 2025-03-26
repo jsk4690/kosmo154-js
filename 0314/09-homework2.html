@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mystyle {
+            width: 100%;
+            padding: 25px;
+            background-color: coral;
+            color: white;
+            font-size: 25px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="class_toggle()">클래스 토글</button>
+    <div id="myDIV">
+        This is a DIV element.
+    </div>
+
+    <script>
+        function class_toggle() {
+            var tg = document.getElementById("myDIV");
+            tg.classList.toggle("mystyle");
+        }
+    </script>
+</body>
+</html>

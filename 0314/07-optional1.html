@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const user = {
+            admin : {
+                name : "관리자",
+                // address : "수원시",
+            },
+        }
+
+        // console.log(user.admin.address); // undefined
+        // console.log(user &&
+        //     user.admin &&
+        //     user.admin.address
+        // )
+
+        // 옵셔널 체이닝
+        console.dir(user?.admin?.address);
+        console.dir(user.admin.address);
+
+        const user2 = {
+            admin() {
+                console.log("관리자 계정입니다.");
+            }
+        }
+
+        const user3 = {};
+        user2.admin?.();
+        user3.admin();
+    </script>
+</body>
+</html>
