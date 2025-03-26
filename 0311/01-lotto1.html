@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <!-- div#num$.lotto-number{?}*6 -->
+        <!-- 1. 6개의 숫자가 위치하는 인터페이스가 존재 -->
+        <div id="num1" class="lotto-number">?</div>
+        <div id="num2" class="lotto-number">?</div>
+        <div id="num3" class="lotto-number">?</div>
+        <div id="num4" class="lotto-number">?</div>
+        <div id="num5" class="lotto-number">?</div>
+        <div id="num6" class="lotto-number">?</div>
+    </div>
+    <button id="btn">로또 번호 추첨!</button>
+    <script>
+        //  2. 버튼을 누른다.
+        document.getElementById("btn").addEventListener("click", function(){
+            // 3. 6개의 인터페이스에서 각각 1~45까지 랜덤한 숫자가 나온다.
+            // 3-1. 6개의 인터페이스에 어떻게 접근? -> getElementById
+            // 3-1-1. 인터페이스의 컨텐츠 영역에 어떻게 접근? -> textContent, innerText
+            // 3-2. 랜덤한 숫자를 어떻게 1~45까지 뽑아? -> Math.floor(Math.random*45)+1
+
+            //수정 후
+            //3. 6개의 인터페이스를 getElementById를 통해 각각의 변수에 저장
+            var num1 = document.getElementById("num1");
+            var num2 = document.getElementById("num2");
+            var num3 = document.getElementById("num3");
+            var num4 = document.getElementById("num4");
+            var num5 = document.getElementById("num5");
+            var num6 = document.getElementById("num6");
+            // 4. 각 6개의 인터페이스에 넣을 랜덤한 값 1~45까지의 정수 중 하나를 발생시킨다.
+            //    Math.floor(Math.random*45)+1
+            var ran1 = Math.floor(Math.random()*45)+1;
+            var ran2 = Math.floor(Math.random()*45)+1;
+            var ran3 = Math.floor(Math.random()*45)+1;
+            var ran4 = Math.floor(Math.random()*45)+1;
+            var ran5 = Math.floor(Math.random()*45)+1;
+            var ran6 = Math.floor(Math.random()*45)+1;
+            // 문제 : 랜덤값 출력 후에 중복 값이 생성됨.
+            // 4-1. 6개의 랜덤값에 반복된 값이 있는지를 살펴본다.
+            //  4-1 검토 : 6개의 랜덤값 => ran1, ran2, ran3, ran4, ran5, ran6
+            //  4-2 검토 : 반복된 값? => 
+            // 4-2. 만약 반복값이 존재할 경우 해당 값을 재굴림 한다. or 전체 숫자를 재굴림한다.
+            // do while문으로 반복된 값이 나오지 않게 while 안에 or로 조건을 넣는다. 
+            do {ran1 = Math.floor(Math.random()*45)+1;} while (ran1 === ran2 || ran1 === ran3 || ran1 === ran4 || ran1 === ran5 || ran1 === ran6);
+            do {ran2 = Math.floor(Math.random()*45)+1;} while (ran2 === ran1 || ran2 === ran3 || ran2 === ran4 || ran2 === ran5 || ran2 === ran6);
+            do {ran3 = Math.floor(Math.random()*45)+1;} while (ran3 === ran1 || ran3 === ran2 || ran3 === ran4 || ran3 === ran5 || ran3 === ran6);
+            do {ran4 = Math.floor(Math.random()*45)+1;} while (ran4 === ran1 || ran4 === ran2)
+            // 5. 3번의 각 변수에 넣었던 인터페이스의 textContent에 해당 랜덤값을 넣는다.
+            num1.textContent = ran1;
+            num2.textContent = ran2;
+            num3.textContent = ran3;
+            num4.textContent = ran4;
+            num5.textContent = ran5;
+            num6.textContent = ran6;
+            // textContent = 으로 값을 매기면 기존에 있던 ?가 사라지고 textContent의 값으로 덮어씌워짐
+        });
+    </script>
+</body>
+</html>
