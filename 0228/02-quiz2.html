@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container > * {
+            border : 1px solid black;
+            padding : 20px;
+            font-size : 1.3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            display: grid;
+            grid-template:
+                'header header header' 100px
+                'welcome welcome welcome' 600px
+                'banner main aside' 1fr
+                'footer footer footer' 100px / 250px 1fr 250px;
+        }
+        header {
+            grid-area: header;
+            background-color: darkkhaki;
+        }
+        .welcome {
+            grid-area: welcome;
+            background: url(images/welcome-image.jpg) center / cover no-repeat;
+        }
+        .banner {
+            grid-area: banner;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            grid-area : main;
+            justify-content: flex-start;
+        }
+        .aside {
+            grid-area: aside;
+        }
+        footer {
+            grid-area: footer;
+            background-color: darkkhaki;
+        }
+ 
+        @media (max-width: 768px){
+            .container {
+                grid-template:
+                    'header' 100px
+                    'welcome' 600px
+                    'banner' 100px
+                    'main' 1fr
+                    'aside' 100px
+                    'footer' 100px / 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>header</header>
+        <div class="welcome">welcome</div>
+        <aside class="banner">banner</aside>
+        <main>
+            <h2>This is Main Content</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, nobis? Nihil, hic aut, adipisci blanditiis amet itaque eum excepturi eius animi, saepe mollitia! Suscipit quas doloremque laborum repellat porro ad!
+                Porro enim quisquam nemo odio incidunt veniam, officia, dolorum laudantium quas tenetur odit, soluta aliquam vitae magnam dolorem! Aspernatur consequuntur at obcaecati minus iusto inventore veniam nemo reprehenderit asperiores accusamus?
+                Minus sunt similique culpa eligendi, dolorum eum molestias rerum nostrum consectetur earum beatae totam sequi quis, odio maxime cumque, id ullam numquam a ipsam voluptatem dignissimos! Ratione inventore accusamus natus.
+                Ipsum blanditiis quia alias soluta iste perspiciatis eaque voluptatem quisquam iure corrupti! Dolores, soluta voluptatibus. Amet nihil, libero earum esse quidem eos aut quia ab similique consectetur soluta minima ullam!
+                Sequi, tempore? Laboriosam facilis hic, voluptates tempora nobis fugiat aliquam. Natus dolores nulla rem omnis optio animi totam maiores delectus, voluptates quo sequi cum? Illo odit quibusdam ipsam fugiat labore?
+            </p>
+        </main>
+        <aside class="aside">aside</aside>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>

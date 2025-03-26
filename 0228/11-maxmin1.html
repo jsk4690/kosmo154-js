@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: bisque;
+        }
+
+        .div1 {
+            /* 두 값 중 큰 값으로 유지 */
+            width: max(500px, 50%);
+            height: min(200px, 50%);
+            background-color: brown;
+            color: white;
+            border: 2px solid black;
+        }
+
+        p {
+            /* 범위 내에서는 변화가 가능한데 범위를 넘어가는 경우 변화가 없음 */
+            font-size: clamp(16px, 5vw, 32px);
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <p>이것은 max(500px, 50%) 예제입니다.</p></div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="./images/landscafe.jpg" width="500" height="500">
+    <svg width="300" height="300">
+        <defs>
+            <filter id="tableExample1">
+                <feComponentTransfer>
+                    <feFuncR type="table" tableValues="0 0.7 1 1" />
+                    <feFuncG type="identity" />
+                    <feFuncB type="identity" />
+                </feComponentTransfer>
+            </filter>
+        </defs>
+        <image xlink:href="images/landscafe.jpg" width="300" height="300" style="filter: url(#tableExample1);" />
+    </svg>
+    <svg width="300" height="300">
+        <defs>
+            <filter id="tableExample2">
+                <feComponentTransfer>
+                    <feFuncR type="identity" />
+                    <feFuncG type="identity" />
+                    <feFuncB type="discrete" tableValues="0 0.5 1" />
+                </feComponentTransfer>
+            </filter>
+        </defs>
+        <image xlink:href="images/landscafe.jpg" width="300" height="300" style="filter: url(#tableExample2);" />
+    </svg>
+    <svg width="300" height="300">
+        <defs>
+            <filter id="linearExample3">
+                <feComponentTransfer>
+                    <feFuncR type="identity" />
+                    <feFuncG type="identity" />
+                    <!-- slope: 곱하기 intercept: 더하기 -->
+                    <feFuncB type="linear" slope="2" intercept="0.5" />
+                </feComponentTransfer>
+            </filter>
+        </defs>
+        <image xlink:href="images/landscafe.jpg" width="300" height="300" style="filter: url(#linearExample3);" />
+    </svg>
+    <svg width="300" height="300">
+        <defs>
+            <filter id="gammaExample4">
+                <feComponentTransfer>
+                    <feFuncR type="identity" />
+                    <feFuncG type="identity" />
+                    <feFuncB type="identity" />
+                    <feFuncA type="gamma" amplitude="0.2"
+                    exponent="0.2" offset="0.5" />
+                </feComponentTransfer>
+            </filter>
+        </defs>
+        <image xlink:href="images/landscafe.jpg" width="300" height="300" style="filter: url(#gammaExample4);" />
+    </svg>
+ 
+</body>
+</html>

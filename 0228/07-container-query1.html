@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .post {
+            /* 컨테이너가 2개 이상일 때는 container-name도 지정해 줘야 함 */
+            container-name: con1;
+            container-type: inline-size;
+        }
+
+        @container con1 (max-width: 768px) {
+            .card {
+                width: 50%;
+                background-color: red;
+                color: white;
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- div.post>div.card>(h2{카드 제목}+p{카드 컨텐츠}) -->
+    <div class="post">
+        <div class="card">
+            <h2>카드 제목</h2>
+            <p>카드 컨텐츠</p>
+        </div>
+    </div>
+</body>
+</html>

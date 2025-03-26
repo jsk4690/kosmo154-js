@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container>* {
+            background-color: skyblue;
+            padding: 20px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: grid;
+            gap: 10px;
+            /* 화면 위에서 끝까지 */
+            height: 100vh;
+            grid-template:
+                'header header header' 100px
+                'menu main top' 150px
+                /* 유동적인 부분은 fr */
+                'menu main aside' 1fr
+                'menu main bottom' 150px
+                'footer footer footer' 100px / 300px 1fr 300px;
+        }
+
+        header {
+            grid-area: header;
+        }
+
+        nav {
+            grid-area: menu;
+        }
+
+        main {
+            grid-area: main;
+        }
+
+        aside.top {
+            grid-area: top;
+        }
+
+        aside.aside {
+            grid-area: aside;
+        }
+
+        aside.bottom {
+            grid-area: bottom;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- div.container>div*7 -->
+    <div class="container">
+        <header>header</header>
+        <nav>menu</nav>
+        <main>main</main>
+        <aside class="top">top</aside>
+        <aside class="aside">aside</aside>
+        <aside class="bottom">bottom</aside>
+        <footer>footer</footer>
+    </div>
+</body>
+
+</html>

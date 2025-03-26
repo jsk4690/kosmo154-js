@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="./images/italy.jpg" width="300" height="300" alt="">
+    <svg width="500" height="300" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <!-- <filter id="invert">
+                <feColorMatrix type="matrix" values="
+              0.33  0.33  0.33  0  0
+              0.33  0.33  0.33  0  0
+              0.33  0.33  0.33  0  0
+               0  0  0  1  0" />
+            </filter> -->
+            <filter id="saturate">
+                <feColorMatrix type="saturate" values="0.3">
+                    <animate attributeName="values" from="0.3"
+                        to="0.7" dur="5s" fill="freeze"/>                
+                </feColorMatrix>
+        </defs>
+        <!-- <image filter="url(#invert)" href="images/italy.jpg" width="500" height="300" /> -->
+        <image filter="url(#saturate)" href="images/italy.jpg" width="500" height="300" />
+    </svg>
+ 
+</body>
+</html>
