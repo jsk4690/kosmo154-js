@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 600px;
+            height: 600px;
+            border: 25px dotted black;
+            background: url('./images/cup.jpg') no-repeat right bottom;
+            padding: 50px;
+        }
+
+        .div1 {
+            background-origin: border-box;
+        }
+
+        .div2 {
+            background-origin: padding-box;
+        }
+
+        .div3 {
+            background-origin: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eos ea, ex quod nihil expedita quisquam possimus vel! Qui dicta doloremque aut labore ducimus odio voluptas corporis dolor! Sint, pariatur.</p>
+    </div>
+    <div class="div2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eos ea, ex quod nihil expedita quisquam possimus vel! Qui dicta doloremque aut labore ducimus odio voluptas corporis dolor! Sint, pariatur.</p>
+    </div>
+    <div class="div3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eos ea, ex quod nihil expedita quisquam possimus vel! Qui dicta doloremque aut labore ducimus odio voluptas corporis dolor! Sint, pariatur.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 500px;
+            height: 300px;
+            border: 1px solid black;
+        }
+
+        .div1 {
+            background-image: radial-gradient(closest-side at 60% 60%, blue, green, yellow, black);
+        }
+
+        .div2 {
+            background-image: radial-gradient(closest-corner at 60% 60%, blue, green, yellow, black);
+        }
+
+        .div3 {
+            background-image: radial-gradient(farthest-side at 60% 60%, blue, green, yellow, black);
+        }
+
+        .div4 {
+            background-image: radial-gradient(farthest-corner at 60% 60%, blue, green, yellow, black);
+        }
+
+        .div5 {
+            background-image: repeating-radial-gradient(yellow, red 20px);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- div.div$4 -->
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="div4"></div>
+    <div class="div5"></div>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 600px;
+            height: 300px;
+        }
+
+        .div1 {
+            /* background: linear-gradient(90deg, #FF0000, #FFFFFF); */
+            /* background: linear-gradient(to right, #FF0000, #FFFFFF); */
+            background: linear-gradient(to right, #FF0000, #FFFFFF 50%, #0000FF);
+            /* 중점을 기준으로 선을 위로 올렸을 때부터 오른쪽이 양수, 왼쪽이 음수 */
+            /* background: repeating-linear-gradient(to right, red, white 20px); */
+            background: repeating-linear-gradient(to right, red, red 20px, yellow 20px, yellow 40px);
+            /* background: repeating-linear-gradient(to right, red, yellow 20px, red 20px, yellow 40px); */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1"></div>
+</body>
+
+</html>

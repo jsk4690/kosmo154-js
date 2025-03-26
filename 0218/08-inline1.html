@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 인라인 태그
+     1. 태그 영역은 컨텐츠 중심으로 설정
+     2. 배치는 좌에서 우로
+     3. 화면이 넘어갈 경우 다음 라인으로 밀려서 배치됨
+     4. width나 height와 같은 영역을 설정하는 속성 사용 불가. -->
+     <!-- span{컨텐츠$}*3 -->
+     <span>컨텐츠1</span><span>컨텐츠2</span><span>컨텐츠3</span>
+     <span>컨텐츠1</span><span>컨텐츠2</span><span>컨텐츠3</span>
+     <span>컨텐츠1</span><span>컨텐츠2</span><span>컨텐츠3</span>
+     <span>컨텐츠1</span><span>컨텐츠2</span><span>컨텐츠3</span>
+     <span>컨텐츠1</span><span>컨텐츠2</span><span>컨텐츠3</span>
+
+     <!-- 블록 태그
+      1. 태그의 영역은 좌에서 우 끝까지의 영역을 지정. 다만 세로 크기는 컨텐츠의 기준을 따라감
+      2. 배치는 위에서 아래로 기본 배치가 일어남
+      3. 모든 영역과 관련된 태그가 먹히며 해당 속성을 position이나 display로 성질을 바꿀 수 있음. -->
+      <style>
+        h1 {
+            width: 300px;
+        }
+
+        p {
+            width: 300px;
+        }
+      </style>
+      <h1>
+        이것은 블록 태그1
+      </h1>
+      <p>이것은 블록 태그2</p>
+</body>
+</html>

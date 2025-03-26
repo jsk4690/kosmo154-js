@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1 {
+            border: 1px solid black;
+            width: 1200px;
+            height: 900px;
+            /* background-image: url('./images/dot-image1.jpg'); */
+            /* background-repeat: no-repeat; */
+            /* background-repeat: repeat-y; 반복 */
+            /* color: white; */
+            /* background-size: 900px 900px;  */
+            /* background-size: auto; 이미지 크기에 대응되게 출력 */
+            /* background-size: 100%; 가로 먼저 확장되고 세로 확장 */
+            /* background-size: contain; 사진 비율이 사각형 비율과 딱 맞을 경우 사용 가능, 사진이 사각형에 딱 들어맞도록 맞춘다 */
+            /* background-size: cover; 현재에 있는 그림이 네모를 공백 없이 다 덮음, 사진이 잘릴 수는 있지만 공백 없이 사각형을 채울 수 있다. 가장 잘 쓰는 옵션 */
+            /* background-size: auto; */
+            /* 이미지는 무조건 좌측 상단부터 배치됨 */
+            /* background-position: center; */
+            /* background-position: center; 이미지가 네모의 정중앙에 배치됨 */
+            /* background-position: right bottom; */
+            /* background-position: right bottom; 이미지가 우측 하단에 배치됨 */
+            /* background: url('./images/dot-image1.jpg') center no-repeat; */ /* 이미지 중앙 정렬, 반복 x */
+            background: url('./images/dot-image1.jpg') center / cover no-repeat;
+            /* background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; */
+            /* opacity: 0.3; */ /* 투명도 설정 */
+            /* filter: opacity(0.3); */ /* 투명도 설정 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <!-- <h1>내 젊은 시절</h1> -->
+    </div>
+</body>
+
+</html>
