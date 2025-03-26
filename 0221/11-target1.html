@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid gray;
+        }
+
+        section:target {
+            background-color: lightyellow;
+            border-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>타겟 가상 클래스 예제</h1>
+    <!-- nav>ul>li*3>a[href="section$"]{섹션 $로 이동} -->
+    <nav>
+    <!-- nav: div랑 같은 기능 -->
+        <ul>
+            <li><a href="#section1">섹션 1로 이동</a></li>
+            <li><a href="#section2">섹션 2로 이동</a></li>
+            <li><a href="#section3">섹션 3로 이동</a></li>
+        </ul>
+    </nav>
+
+    <!-- section#section$*3>(h2{섹션 $}+p{이곳은 섹션 $의 내용입니다.}) -->
+    <section id="section1">
+        <h2>섹션 1</h2>
+        <p>이곳은 섹션 1의 내용입니다.</p>
+    </section>
+    <section id="section2">
+        <h2>섹션 2</h2>
+        <p>이곳은 섹션 2의 내용입니다.</p>
+    </section>
+    <section id="section3">
+        <h2>섹션 3</h2>
+        <p>이곳은 섹션 3의 내용입니다.</p>
+    </section>
+</body>
+</html>

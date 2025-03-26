@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .outer p:nth-child(3) {
+            color: red; */
+            /* child: outer 안에는 p p div p p가 있으므로 세 번째 요소는 div
+            따라서 출력되지 않음 */
+        /* } */
+/* 
+        .outer p:nth-of-type(3) {
+            color: red; */
+            /* type: outer 안에 아무리 다른 요소들이 있어도 p만 찾아서 실행하기 때문에 내부 div는 무시하고 그 다음에 있는 p로 출력됨 */
+        /* } */
+
+        p:nth-child(3) {
+            color: red;
+            /* outer도 기준이 되지만 내부 div도 기준이 되기 때문에 3-3이 출력됨
+            내용3을 내부 div 위로 올리면 내용3과 내용3-3이 모두 빨갛게 출력됨 */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- div.outer>p{내용$}*4 -->
+    <div class="outer">
+        <p>내용1</p>
+        <p>내용2</p>
+        <!-- <p>내용3</p> -->
+        <div>
+            <p>내용3-1</p>
+            <p>내용3-2</p>
+            <p>내용3-3</p>
+            <div>
+                <p>내용3-1-1</p>
+                <p>내용3-2-2</p>
+                <p>내용3-3-3</p>
+            </div>
+        </div>
+        <p>내용3</p>
+        <p>내용4</p>
+    </div>
+</body>
+
+</html>

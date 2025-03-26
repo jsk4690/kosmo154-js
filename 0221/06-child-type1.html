@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* child -> 위치가 먼저, 타입이 나중 */
+        .list1 > p:first-child {
+            /* h1은 p:first-child가 아니기 때문에 결과가 나오지 않음 */
+            color: blue;
+        }
+
+        /* type-> 위치가 타입을 기준으로 카운트 */
+        .list1 > p:first-of-type {
+            color: blue;
+        /* list 안에 p가 아닌 다른 태그가 있어도 p만 카운트 됨 */
+        }
+
+        .list1 > p:nth-child(2) {
+            color: blue;
+            /* 두 번째에 위치한 태그에 색을 입힘 
+            div를 기준으로 두 번째
+            내려간 후 p태그가 맞으면 색을 입힘 */
+        }
+
+        .list1 > p:nth-of-type(2) {
+            color: blue;
+            /* type은 div에 아무리 다른 요소가 많아도 지정한 연산자의 첫 번째 코드부터 시작 */
+        } 
+    </style>
+</head>
+
+<body>
+    <div class="list1">
+        <!-- p{내용$}*4 -->
+         <h1>제목1</h1>
+        <p>내용1</p>
+        <p>내용2</p>
+        <p>내용3</p>
+        <p>내용4</p>
+    </div>
+</body>
+
+</html>

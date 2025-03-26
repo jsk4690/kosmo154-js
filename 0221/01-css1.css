@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+body {
+    font : 14px 맑은 고딕;
+}
+
+.container {
+    position: relative;
+    width : 900px;
+    margin : 0 auto;
+    background-color: white;
+    border : 1px solid #eee;
+}
+header {
+    position : relative;
+    height : 300px;
+    background : url("images/pention_image.png") no-repeat left top ;
+    background-size: 100% 300px;
+}
+
+header h1 {
+    position: absolute;
+    right : 20px;
+    bottom : 70px;
+    font-size: 3rem;
+    color : lightgoldenrodyellow;
+    text-shadow : 1px 2px 2px black;
+}
+
+header h2 {
+    position: absolute;
+    right : 20px;
+    bottom : 30px;
+    font-size : 2rem;
+    color : yellow;
+    text-shadow: 0px 1px 1px black;
+}
+
+.navi {
+    position: relative;
+    background-color : #271717;
+    margin-top : -15px;
+    height : 60px;
+}
+
+.navi ul {
+    list-style-type: none;
+    height : 40px;
+    padding-top : 10px;
+    padding-bottom : 5px;
+}
+
+.navi ul li {
+    display: inline-block;
+    font-size : 15px;
+}
+
+.navi a, .navi a:visited {
+    padding : 10px 5px 5px 75px;
+    display: block;
+    color : white;
+    text-decoration: none;
+}
+
+.navi a:hover, .navi a:active, .navi a:focus {
+    text-shadow: 0px 2px 2px black;
+    color : orange;
+}
+
+.sidebar {
+    float : right;
+    width : 150px;
+    height : 550px;
+    background-color: aquamarine;
+    padding : 20px 10px 0px 10px;
+}
+
+.sidebar img {
+    margin-bottom : 5px;
+    border : 1px solid #ccc;
+    opacity: 0.5;
+    width : 145px;
+}
+
+.sidebar img:hover {
+    border : 1px solid black;
+    opacity: 1.0;
+}
+
+.content {
+    background-color: white;
+    padding-top: 5px;
+    padding-left: 10px;
+    width : 720px;
+    float : left;
+}
+
+footer {
+    padding : 10px 0;
+    background-color: white;
+    color : black;
+    text-align: center;
+    clear : both;
+}
+
+
+
+
+
+
+
+
+
+

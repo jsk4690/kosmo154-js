@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .origin {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            float: left;
+            margin: 40px;
+        }
+
+        .skewx {
+            /* 중심점을 왼쪽 상단으로 이동 */
+            transform-origin: left top;
+            transform: skewX(30deg);
+        }
+
+        .skewy {
+            transform: skewY(45deg);
+        }
+
+        .skew {
+            transform: skew(35deg, 45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="origin">
+        <div class="skewx"><img src="./images/child.jpg" alt=""></div>
+    </div>
+    <div class="origin">
+        <div class="skewy"><img src="./images/child.jpg" alt=""></div>
+    </div>
+    <div class="origin">
+        <div class="skew"><img src="./images/child.jpg" alt=""></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*    p:only-child {
+            color: red; --> */
+            /* 해당 태그 안에 오직 1개만 있는 경우, 빨갛게 출력됨
+            만약 div2에 h1태그가 있으면 첫 번째 내용1만 빨갛게 출력됨 */
+        /* } */
+
+        p:only-of-type {
+            color: red;
+            /* div2에서는 p태그가 한 개밖에 없기 때문에 제목1을 제외한 모든 태그들이 빨갛게 변함 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <p>내용1</p>
+    </div>
+    <div class="div2">
+        <h1>제목1</h1>
+        <p>내용1</p>
+        <div>
+            <p>내용2-1</p>
+        </div>
+    </div>
+</body>
+
+</html>

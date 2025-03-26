@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div:has(img) {
+            background-color: lightyellow;
+            border: 2px solid orange;
+            padding: 16px;
+        } */
+
+        div:not(:has(img)) {
+            background-color: lightyellow;
+            border: 2px solid orange;
+            padding: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>이 div 요소에는 이미지가 없습니다.</p>
+    </div>
+
+    <div>
+        <p>이 div 요소에는 이미지가 있습니다.</p>
+        <img src="./images/tangerines.jpg" width="200" alt="">
+    </div>
+</body>
+</html>

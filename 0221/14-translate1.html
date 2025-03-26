@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .origin {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 60px;
+            /* overflow: hidden; */
+        }
+
+        /* .origin img {
+            width: 100%;
+            height: 100%;
+        } */
+
+        .movex {
+            transform: translateX(50px);
+        }
+
+        .movey {
+            transform: translateY(40px);
+        }
+
+        .movexy {
+            transform: translate(30px, 20px);
+            /* x축으로 30px, y축으로 20px 이동 */
+        }
+
+        /* .movez {
+            transform: translateZ(50px);
+            웹은 평면이므로 z는 결과가 나타나지 않음
+        } */
+
+        .movez {
+            transform: perspective(500px) translateZ(-50px);
+        }
+
+        .move3d {
+            transform: perspective(500px) translate3d(20px, 30px, 80px);
+            /* perspective는 한없이 작아지지만 한없이 커지지는 않음
+            굉장히 큰 숫자로 perspective를 잡으면 z축으로 일어나는 변화가 둔해짐 */
+        }
+    </style>
+</head>
+<body>
+    <!-- div.origin>div.movex>img[src="./images/child.jpg"] -->
+    <div class="origin">
+        <div class="movex">
+            <img src="./images/child.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="origin">
+        <div class="movey">
+            <img src="./images/child.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="origin">
+        <div class="movexy">
+            <img src="./images/child.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="origin">
+        <div class="movez">
+            <img src="./images/child.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="origin">
+        <div class="move3d">
+            <img src="./images/child.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
