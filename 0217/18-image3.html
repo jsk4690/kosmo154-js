@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+        <!-- 배경 설정 -->
+        <rect width="100%" height="100%" fill="#f0f0f0" />
+        <!-- 1. preserveAspectRatio="xMidYMid meet" -->
+        <g><!-- 뷰포트 테두리 -->
+            <rect x="50" y="50" width="300" height="200" fill="none" stroke="#000" />
+            <!-- 이미지 삽입 -->
+            <image href="images/mountain.jpg" x="50" y="50" width="300" height="200"
+                preserveAspectRatio="xMidYMid meet" />
+            <!-- 설명 텍스트 --><text x="50" y="280" font-size="16" fill="#333">
+                preserveAspectRatio="xMidYMid meet"</text></g>
+
+        <!-- 2. preserveAspectRatio="xMinYMin slice" -->
+        <g> <!-- 뷰포트 테두리 -->
+            <rect x="400" y="50" width="300" height="200" fill="none" stroke="#000" />
+            <!-- 이미지 삽입 -->
+            <image href="images/mountain.jpg" x="400" y="50" width="300" height="200"
+                preserveAspectRatio="xMinYMin slice" />
+            <!-- 설명 텍스트 --><text x="400" y="280" font-size="16" fill="#333">
+                preserveAspectRatio="xMinYMin slice"</text></g>
+
+        <!-- 3. preserveAspectRatio="none" -->
+        <g><!-- 뷰포트 테두리 -->
+            <rect x="50" y="350" width="300" height="200" fill="none" stroke="#000" />
+            <!-- 이미지 삽입 -->
+            <image href="images/mountain.jpg" x="50" y="350" width="300" height="200"
+                preserveAspectRatio="none" />
+            <!-- 설명 텍스트 --><text x="50" y="580" font-size="16" fill="#333">
+                preserveAspectRatio="none"</text></g>
+
+        <!-- 4. preserveAspectRatio="xMaxYMax meet" -->
+        <g><!-- 뷰포트 테두리 -->
+            <rect x="400" y="350" width="300" height="200" fill="none" stroke="#000" />
+            <!-- 이미지 삽입 -->
+            <image href="images/mountain.jpg" x="400" y="350" width="300" height="200"
+                preserveAspectRatio="xMaxYMax meet" />
+            <!-- 설명 텍스트 --><text x="400" y="580" font-size="16" fill="#333">
+                preserveAspectRatio="xMaxYMax meet"</text></g>
+    </svg>
+
+</body>
+
+</html>

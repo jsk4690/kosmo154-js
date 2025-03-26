@@ -1,0 +1,8 @@
+<svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        #txt1 {
+            font-family: "궁서";
+        }
+    </style>
+    <text id="txt1" x="10" y="50" fill="green">안녕하세요 154기 여러분</text>
+</svg>

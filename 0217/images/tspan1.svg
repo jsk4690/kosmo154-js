@@ -1,0 +1,17 @@
+<svg viewBox="0 0 700 200" xmlns="http://www.w3.org/2000/svg">
+    <text x="20" y="40" font-family="Verdana" font-size="24">
+        <!-- 앞에 텍스트만 온다는 보장이 없기 때문에 맨 처음 값은 절대 좌표로 해야 함 -->
+        <tspan x="20" dy="0" fill="blue" font-weight="normal">
+            일반 텍스트,
+        </tspan>
+        <tspan dx="10" fill="red" font-style="italic">
+            이텔릭 텍스트,
+        </tspan>
+        <tspan dx="10" fill="green" font-weight="bold">
+            볼드 텍스트,
+        </tspan>
+        <tspan dx="10" fill="orange" text-decoration="underline">
+            밑줄 텍스트,
+        </tspan>
+    </text>
+</svg>

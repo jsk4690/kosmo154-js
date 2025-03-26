@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style-type: square;
+        }
+
+        .ul2 {
+            list-style-position: inside;
+        }
+    </style>
+</head>
+<body>
+    <!-- ul>li*3>p{컨텐츠$} -->
+    <ul>
+        <li>
+            <p>컨텐츠1</p>
+        </li>
+        <li>
+            <p>컨텐츠2</p>
+        </li>
+        <li>
+            <p>컨텐츠3</p>
+        </li>
+    </ul>
+
+    <ul class="ul2">
+        <li>
+            <p>컨텐츠1</p>
+        </li>
+        <li>
+            <p>컨텐츠2</p>
+        </li>
+        <li>
+            <p>컨텐츠3</p>
+            <!-- ul>li*2>p{컨텐츠$@4} -->
+            <ul>
+                <li>
+                    <p>컨텐츠4</p>
+                </li>
+                <li>
+                    <p>컨텐츠5</p>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

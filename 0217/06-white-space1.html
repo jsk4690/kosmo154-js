@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p.a {
+            white-space: nowrap;
+            /* 공백을 하나로 처리하고, 줄바꿈을 하지 않음 */
+        }
+
+        p.b {
+            white-space: normal;
+            /* 기본값으로 연속되는 공백을 하나로 처리, 영역을 벗어나면 알아서 줄바꿈, 엔터는 적용되지 않음 */
+        }
+
+        p.c {
+            white-space: pre;
+            /* ************ overflow: 중요************** */
+            /* overflow: hidden; */
+            overflow: scroll;
+            /* overflow-x: scroll; */
+            /* overflow-x: scroll x축 스크롤만 보임 */
+            /* overflow: scroll 보이지 않는 내용은 보여주지 않지만, 글에 스크롤이 생기며 스크롤을 하면 숨겨진 내용이 보임 */
+            /* overflow: hidden 블럭을 벗어나는 컨텐츠는 보이지 않음 */
+            /* 스페이스와 엔터 모두 다 인식
+            엔터를 치면 줄바꿈이 일어남. (엔터에 의해서만 줄바꿈이 일어남)
+            영역이 벗어나는 컨텐츠에 의해서는 관여를 하지 않음
+            영역을 벗어나든 아니든 줄바꿈을 하지 않음 */
+        }
+
+        p.d {
+            white-space: pre-line;
+            /* 중복되는 스페이스는 1개로 처리
+            엔터로 줄바꿈
+            컨텐츠의 영역이 박스를 벗어나면 자동으로 줄바꿈 */
+        }
+
+        p.e {
+            white-space: pre-wrap;
+            /* 연속된 스페이스, 엔터, 박스를 벗어났을 때의 줄바꿈 모두 가능 */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The white-space Property</h1>
+
+    <h2>white-space: nowrap:</h2>
+    <p class="a" style="width: 600px;">
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+    </p>
+
+    <h2>white-space: normal:</h2>
+    <p class="b" style="width: 600px;">
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+    </p>
+
+    <h2>white-space: pre:</h2>
+    <p class="c" style="width: 300px;">
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+    </p>
+
+    <h2>white-space: pre-line:</h2>
+    <p class="d" style="width: 300px;">
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+    </p>
+
+    <h2>white-space: pre-wrap:</h2>
+    <p class="e" style="width: 300px;">
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+<svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
+    <image x="10" y="10" width="400" height="120" href="./island.jpg" />
+        <!-- 외부에서 끌어오는 컨텐츠는 svg에서 용량을 절감시킬 수 없음
+        이미지는 svg에서 연결하면 용량 감소는 없고 export도 안 됨 -->
+        <!-- 20색 이상의 이미지인 경우엔 svg convertor가 의미가 없음
+        꼭 사용하려면 이미지 손실을 감수해야 함 -->
+    </image>
+</svg>

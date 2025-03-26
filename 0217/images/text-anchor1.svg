@@ -1,0 +1,4 @@
+<svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+    <text x="150" y="65" text-anchor="end" font-size="30" fill="red">텍스트1</text>
+    <!-- text-anchor=text-align 텍스트 정렬 -->
+</svg>
