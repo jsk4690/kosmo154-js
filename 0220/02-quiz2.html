@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            /* ul은 블럭 태그 */
+            list-style-type: none;
+            display: inline;
+        }
+        li {
+            color: blue;
+            display: inline-block;
+            padding: 20px;
+        }
+
+        .inner > li {
+            background-color: yellow;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- ul>li>ul>li*3>a -->
+    <ul>
+        <li>메인메뉴 : 
+            <ul class="inner">
+                <li><a href="#">떡볶이</a></li>
+                <li><a href="#">비빔밥</a></li>
+                <li><a href="#">제육덮밥</a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

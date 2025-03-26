@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 자식 선택자 */
+        /* #ul1 > li {
+            border: 1px solid black;
+        } */
+
+        #ul1 > li > ul > li {
+            border: 1px solid black;
+        }
+
+        /* 하위 선택자 */
+        /* #ul1 li {
+            border: 1px solid black;
+        } */
+
+    </style>
+</head>
+<body>
+    <!-- ul>li.oli${상위내용$}*3 -->
+    <ul id="ul1">
+        <li class="oli1">상위내용1</li>
+        <li class="oli2">상위내용2</li>
+        <li class="oli3">상위내용3
+            <!-- ul>li.uli${하위내용$}*3 -->
+            <ul id="ul2">
+                <li class="uli1">하위내용1</li>
+                <li class="uli2">하위내용2</li>
+                <li class="uli3">하위내용3</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>

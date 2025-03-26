@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 인접 형제 선택자 */
+        .p2 + .p3 {
+            text-decoration: underline;
+        }
+        /* 형제 선택자 */
+        .p3 ~ p {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- p.p${텍스트$}*3 -->
+    <p class="p1">텍스트1</p>
+    <p class="p2">텍스트2</p>
+    <p class="p3">텍스트3</p>
+    <p>텍스트4</p>
+    <p>텍스트5</p>
+</body>
+</html>

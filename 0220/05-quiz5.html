@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        div {
+            box-sizing: border-box;
+        }
+
+        .all {
+            width: 99%;
+        }
+
+        .head {
+            height: 150px;
+            background-color: yellow;
+            width: 100%;
+        }
+
+        .aside{
+            height: 150px;
+            background-color: red;
+            color: white;
+            /* float: left; */
+            display: inline-block;
+            width: 30%;
+        }
+
+        .body {
+            height: 150px;
+            background-color: blue;
+            color: white;
+            /* float: right; */
+            display: inline-block;
+            width: 68%;
+            /* %는 내가 속한 부모의 width를 기준으로 매김 */
+            /* width를 vw로 하면 부모가 아니라 화면 전체가 기준 */
+        }
+
+        .footer {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <!-- div.all>(div.head>h1{header})+(div.aside>h1{aside})+(div.body>h1{body}) -->
+    <div class="all">
+        <div class="head">
+            <h1>header</h1>
+        </div>
+        <div class="aside">
+            <h1>aside</h1>
+        </div>
+        <div class="body">
+            <h1>body</h1>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>

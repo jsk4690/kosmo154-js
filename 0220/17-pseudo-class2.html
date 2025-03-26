@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            background-color: lightgray;
+        }
+
+        button:hover {
+            background-color: lightblue;
+        }
+
+        button:active {
+            background-color: darkblue;
+            color: white;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 1rem;
+            border: 2px solid gray;
+            background-color: lightgray;
+        }
+
+        input:focus {
+            /* border-color: blue; */
+            background-color: white;
+            /* outline: none; */
+            /* outline: 2px solid blue; */
+            outline-color: blue;
+            /* input 태그의 바깥 선은 border가 아니라 outline
+            테두리 색을 바꾸고 싶으면 outline을 none으로 지정해 준 후 border-color나 outline: 2px solid blue로 바꿔주면 됨 */
+            
+        }
+
+        .box {
+            background-color: lightgray;
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+        }
+
+        .box:hover {
+            background-color: lightgreen;
+        }
+
+        .box:active {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <button>클릭하세요</button>
+    <input type="text" name="" id="">
+    <div class="box"></div>
+</body>
+</html>

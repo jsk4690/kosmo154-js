@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:disabled {
+            background-color: burlywood;
+        }
+
+        input:enabled {
+            background-color: aqua;
+        }
+
+
+        input[type="radio"]:checked + label {
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="get">
+        <!-- input:text#txt$[name="txt$"]*3 -->
+        <input type="text" name="txt1" id="txt1">
+        <input type="text" name="txt2" id="txt2" disabled>
+        <input type="radio" name="rd" id="rd1" checked>
+        <label for="rd1">라디오1</label>
+        <input type="radio" name="rd" id="rd2">
+        <label for="rd2">라디오2</label>
+        <input type="radio" name="rd" id="rd3">
+        <label for="rd3">라디오3</label>
+    </form>
+</body>
+
+</html>

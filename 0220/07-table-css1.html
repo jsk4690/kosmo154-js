@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* table만 선을 주면 겉 테두리만 선이 생기고 안쪽 선은 생기지 않음 
+        따라서 안쪽에도 선을 주고 싶으면 tr td까지 해줘야 함*/
+        table, tr, td {
+            /* 표 외각선 지정 */
+            /* border-style: solid;
+            border-width: 1px;
+            border-color: black; */
+            border: 1px solid black;
+            /* 테두리를 합칠 것인지 여부를 결정하는 속성 */
+            border-collapse: collapse; /* 테두리 통합 */
+        }
+
+        td {
+            width: 100px;
+            height: 100px;
+        }
+
+        .td1 {
+            /* 표 안에서 세로 정렬 */
+            vertical-align: baseline;
+        }
+
+        .td2 {
+            vertical-align: top;
+        }
+
+        .td3 {
+            vertical-align: bottom;
+        }
+
+        .td4 {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <!-- table>tr>td.td${텍스트$}*4 -->
+    <table>
+        <tr>
+            <td class="td1">텍스트1</td>
+            <td class="td2">텍스트2</td>
+            <td class="td3">텍스트3</td>
+            <td class="td4">텍스트4</td>
+        </tr>
+    </table>
+</body>
+</html>

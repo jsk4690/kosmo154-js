@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 클래스 예제</title>
+    <style>
+        /* nth-child와 관련된 스타일 */
+        .nth-child-example div:nth-child(2) {
+            background-color: lightblue;
+        /* 부모 요소를 기준으로 두 번째 자식 */
+        }
+        .nth-child-example div:nth-last-child(2) {
+            background-color: lightgreen;
+        }
+        /* 부모 요소를 기준으로 마지막에서 두 번째 자식 */
+        .nth-child-example div:first-child {
+            background-color: lightcoral;
+        }
+        .nth-child-example div:last-child {
+            background-color: lightgoldenrodyellow;
+        }
+
+
+        .only-child-example div:only-child {
+            background-color: lightpink;
+        }
+
+
+        /* nth-of-type와 관련된 스타일 */
+        .nth-of-type-example div:nth-of-type(2) {
+            border: 2px solid blue;
+        }
+        .nth-of-type-example div:nth-last-of-type(2) {
+            border: 2px solid green;
+        }
+        .nth-of-type-example div:first-of-type {
+            border: 2px solid coral;
+        }
+        .nth-of-type-example div:last-of-type {
+            border: 2px solid goldenrod;
+        }
+
+        
+        .only-of-type-example div:only-of-type {
+            border: 2px solid pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>가상 클래스 예제</h1>
+    
+    <h2>nth-child 예제</h2>
+    <div class="nth-child-example">
+        <div>첫 번째 자식 (first-child)</div>
+        <div>두 번째 자식 (nth-child)</div>
+        <div>세 번째 자식 (nth-last-child)</div>
+        <div>네 번째 자식 (last-child)</div>
+    </div>
+ 
+    <h2>nth-of-type 예제</h2>
+    <div class="nth-of-type-example">
+        <div>첫 번째 div(first-of-type)</div>
+        <p>첫 번째 p</p>
+        <div>두 번째 div(nth-of-type)</div>
+        <p>두 번째 p</p>
+        <div>세 번째 div(nth-last-of-type)</div>
+        <p>세 번째 p</p>
+        <div>네 번째 div(last-of-type)</div>
+        <p>네 번째 p</p>
+    </div>
+    
+    <h2>only-child와 only-of-type 예제</h2>
+    <div class="only-child-example">
+        <div>유일한 자식 요소 (only-child)</div>
+    </div>
+    
+    <div class="only-of-type-example">
+        <p>유일한 p 요소 </p>
+        <div>유일한 div 요소(only-of-type)</div>
+    </div>
+ 
+</body>
+</html>
