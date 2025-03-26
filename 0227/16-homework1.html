@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            gap: 5px;
+            grid-template:
+                'header header header header header' 1fr
+                'menu main main main top' 2fr
+                'menu main main main aside' 4fr
+                'menu main main main bottom' 2fr
+                'footer footer footer footer footer' 1fr / 2fr 1fr 3fr 1fr 2fr;
+        }
+
+        .grid-item {
+            padding: 10px;
+            border: 1px solid rgb(50, 50, 40);
+            color: rgb(0, 0, 0);
+            background: rgb(126, 211, 240);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        header {
+            grid-area: header;
+        }
+
+        .menu {
+            grid-area: menu;
+        }
+
+        main {
+            grid-area: main;
+        }
+
+        .top {
+            grid-area: top;
+        }
+
+        .aside {
+            grid-area: aside;
+        }
+
+        .bottom {
+            grid-area: bottom;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <header class="grid-item">header</header>
+        <aside class="menu grid-item">menu</aside>
+        <main class="main grid-item">main</main>
+        <aside class="top grid-item">top</aside>
+        <aside class="aside grid-item">aside</aside>
+        <aside class="bottom grid-item">bottom</aside>
+        <footer class="grid-item">footer</footer>
+    </div>
+</body>
+
+</html>

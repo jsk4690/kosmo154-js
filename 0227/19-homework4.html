@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            height: 600px;
+            display: grid;
+            grid-template: 
+            'header header header' 1fr
+            'welcome welcome welcome' 4fr
+            'banner main aside' 4fr
+            'footer footer footer' 1fr / 1fr 8fr 1fr;
+        }
+
+        .grid-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            border: 1px solid black;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: rgb(196, 196, 91);
+        }
+
+        .img {
+            grid-area: welcome;
+            background: url(./images/welcome-image.jpg) center / cover no-repeat;
+        }
+
+        .banner {
+            grid-area: banner;
+        }
+
+        .main {
+            grid-area: main;
+        }
+
+        .aside {
+            grid-area: aside;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: rgb(196, 196, 91);
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <header class="header grid-item">header</header>
+        <header class="img grid-item">welcome</header>
+        <aside class="banner grid-item">banner</aside>
+        <main class="main grid-item">main</main>
+        <aside class="aside grid-item">aside</aside>
+        <footer class="footer grid-item">footer</footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            width: auto;
+            height: 700px;
+            display: grid;
+            grid-template:
+                'header header header' 1fr
+                'welcome welcome welcome' 4fr
+                'banner main aside' 4fr
+                'footer footer footer' 1fr / 2fr 6fr 2fr;
+        }
+
+        .grid-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: rgb(196, 196, 128);
+        }
+
+        .img {
+            grid-area: welcome;
+            background: url(./images/welcome-image.jpg) center / cover no-repeat;
+        }
+
+        .banner {
+            grid-area: banner;
+        }
+
+        .main {
+            grid-area: main;
+        }
+
+        .aside {
+            grid-area: aside;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: rgb(196, 196, 128);
+
+        }
+
+        @media (max-width: 760px) {
+            .grid-container {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <header class="header grid-item">header</header>
+        <header class="img grid-item">welcome</header>
+        <aside class="banner grid-item">banner</aside>
+        <div>
+        <main class="main grid-item">
+            <h2>This is Main Content</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus in blanditiis, porro voluptas maxime suscipit enim? Perspiciatis reiciendis at quo vel aperiam voluptatem ducimus enim fuga, placeat dolores architecto nemo ipsa nihil? Suscipit, assumenda sint repudiandae deleniti officia iure nisi corporis est. Accusamus voluptatibus earum quis blanditiis, eius aut laudantium eligendi delectus dolorum fugiat autem accusantium repudiandae omnis nam, nihil velit iste laborum illum obcaecati deserunt explicabo numquam! Sed nam numquam enim rem accusamus. Consequuntur aliquid, accusamus veniam mollitia suscipit at molestias? Nemo repudiandae explicabo sed, error quibusdam distinctio veritatis ullam quis sequi accusamus inventore rem lavoriosam, placeat impedit neque. Omnis corrupti deserunt
+            </p>
+            main</main>
+            </div>
+        <aside class="aside grid-item">aside</aside>
+        <footer class="footer grid-item">footer</footer>
+    </div>
+</body>
+
+</html>

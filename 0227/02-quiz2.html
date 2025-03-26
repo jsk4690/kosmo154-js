@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #wrapper {
+            width: 320px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        #img-box {
+            width: 100%;
+        }
+
+        .box {
+            width: 320px;
+            height: 100px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+
+        .img1 {
+            background-color: #FF6A00;
+        }
+        
+        .img2 {
+            background-color: #0094FF;
+        }
+        
+        .img3 {
+            background-color: #FF006E;
+        }
+        
+        .img4 {
+            background-color: #4CFF00;
+        }
+
+        @media (min-width: 768px) {
+            /* 768이 넘어가는 순간 가로 배치 */
+            #wrapper {
+                width: 100%;
+            }
+            #img-box {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+            .box {
+                margin: 0.5%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- div#wrapper>(h1{반응형 웹 디자인}+(div#img-box>div.box.img$*4)) -->
+    <div id="wrapper">
+        <h1>반응형 웹 디자인</h1>
+        <div id="img-box">
+            <div class="box img1"></div>
+            <div class="box img2"></div>
+            <div class="box img3"></div>
+            <div class="box img4"></div>
+        </div>
+    </div>
+</body>
+</html>

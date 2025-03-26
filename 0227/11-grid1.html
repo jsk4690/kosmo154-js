@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="default.css">
+    <style>
+        .grid-container {
+            display: grid;
+            height: 80vh;
+            /* grid-template-columns: 100px 300px 200px; */
+            /* grid-template-columns: 100px minmax(300px, 500px) 200px; */
+            grid-template-columns: 100px minmax(300px, 1fr) 200px;
+            /* fr: 화면의 크기에 맞춰 확장, px값은 고정되고 fr값은 비율에 따라 확장됨 */
+            /* grid-template-columns: 100px 1fr 200px; */
+            /* grid-template-columns: 100px auto 200px; */
+            /* auto 셀은 나머지 셀이 차지한 공간을 제외한 나머지를 모두 가짐 */
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+            /* grid-template-columns: repeat(5, 1fr); */
+            /* grid-template-columns: repeat(3, 300px 1fr); */
+            /* grid-template-columns: repeat(4, auto); */
+            /* grid-template-columns: repeat(3, 300px) 100px; */
+            /* grid-template-columns: 1fr auto 1fr; */
+            /* fr이 auto보다 우선 순위를 가짐, auto는 컨텐츠가 가진 최소한의 공간만 차지 */
+            grid-template-rows: 200px 200px 100px;
+            /* grid-template-rows: 200px 200px; */
+        }
+    </style>
+</head>
+<body>
+    <!-- div.grid-container>div.grid-item{$}*9 -->
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+    <!-- 범위를 벗어나는 블럭은 바로 윗 블럭과 유사하게 생성됨 -->
+</body>
+</html>

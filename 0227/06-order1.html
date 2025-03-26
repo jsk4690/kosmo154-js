@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="default.css">
+    <style>
+        .flex-container {
+            display: flex;
+        }
+
+        .flex-item:nth-child(3) {
+            order: 3;
+        }
+
+        .flex-item:nth-child(5) {
+            order: -1;
+        }
+        /* order: 실제 순서를 매긴 후 재배치, 숫자가 높을수록 뒤, 숫자가 낮을수록 앞, 기본값은 0 
+        flex-container 안에서만 가능 
+        order: 일렬 배치
+        z-index: 수직 배치 */
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">AAAAAAAA</div>
+        <div class="flex-item">BBB</div>
+        <div class="flex-item">CCCCC</div>
+        <div class="flex-item">DDDDDDD</div>
+        <div class="flex-item">EEE</div>
+    </div>
+</body>
+</html>

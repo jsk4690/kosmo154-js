@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="default.css">
+    <style>
+        .grid-container {
+            display: grid;
+            /* grid-template-columns: 1fr 3fr 1fr;
+            grid-template-rows: 1fr 3fr 1fr;
+            grid-template-areas:
+            '..... header header'
+            'sidebar-a main sidebar-b'
+            'footer footer footer'; */
+            /* .....: 빈 공간, 점은 하나만 써도 되지만 가독성을 위해서 5개 놓는 걸 추천 */
+            /* columns + rows + areas */
+            grid-template:
+            '..... header header' 1fr
+            'sidebar-a main sidebar-b' 3fr
+            'footer footer footer' 1fr / 1fr 3fr 1fr;
+            /* 앞에 하나씩 있는 게 row, 뒤에 3개가 column 
+            column값은 무조건 마지막 컨텐츠가 있는 열의 row 옆에 써주는 게 필수 */
+        }
+
+        header {
+            grid-area: header;
+        }
+
+        .sidebar-a {
+            grid-area: sidebar-a;
+        }
+
+        .sidebar-b {
+            grid-area: sidebar-b;
+        }
+
+        main {
+            grid-area: main;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <header class="grid-item">Header</header>
+        <aside class="sidebar-a grid-item">SideBar A</aside>
+        <aside class="sidebar-b grid-item">SideBar B</aside>
+        <main class="grid-item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ad distinctio blanditiis exercitationem maxime facilis adipisci minima optio rem. Incidunt esse laborum omnis reprehenderit, repellendus autem nihil perspiciatis beatae molestiae.
+            Nam neque perferendis, odio culpa nulla obcaecati recusandae aliquid? Veniam tenetur incidunt voluptas, voluptatibus quidem voluptatum, odio aliquid animi voluptates laborum eum aperiam repellat facere porro aut ullam soluta obcaecati.
+            Dolores atque soluta deserunt assumenda voluptate fugit nemo necessitatibus saepe magni ducimus. Qui, fugit? Excepturi minus maiores iusto voluptatem asperiores nihil! Temporibus enim id illum deserunt, et accusamus magni voluptates.
+            Magnam hic ullam consequuntur soluta nulla veniam quas? Atque accusantium cumque molestiae vero necessitatibus laboriosam et ipsa, explicabo quaerat placeat facere velit dolorum aperiam, non est consectetur maxime officia voluptates?
+            Officia rem expedita omnis laudantium perspiciatis nesciunt iure excepturi illum corporis quo, rerum repudiandae debitis repellendus libero unde culpa deleniti sint, possimus, tenetur qui quos alias nihil nisi. Repellat, quod.
+            Excepturi qui, deserunt amet debitis necessitatibus nam doloribus, vero pariatur similique ut modi, provident asperiores sapiente quam nulla obcaecati dolorem. Mollitia deserunt sint, voluptates id iure nihil obcaecati vel ullam?
+            Harum, corrupti soluta! Maiores laboriosam architecto non libero eum voluptatum error, fugiat possimus reiciendis iste adipisci cum nulla molestiae ullam nam explicabo dolor deleniti impedit dolorum in perferendis. Id, architecto.
+            Quibusdam, commodi autem cum saepe magnam officiis repellat illum non nobis itaque veniam, vitae exercitationem. Porro molestiae blanditiis eligendi iusto, corporis, itaque ducimus cumque, excepturi iste culpa tenetur neque quidem.
+            Quos maxime ut veritatis reprehenderit modi optio voluptas? Facere, accusantium ut ipsam nobis illum odit autem ipsa atque ea mollitia ab repellendus aperiam maxime vel fuga optio. In, nam voluptas!
+            Accusamus nostrum architecto vitae dicta dolorem necessitatibus corrupti nesciunt molestiae soluta hic molestias tempora est modi ea ad pariatur consectetur explicabo inventore, debitis adipisci culpa, possimus esse commodi. At, voluptatum!
+        </main>
+        <footer class="grid-item">Footer</footer>
+    </div>
+</body>
+</html>

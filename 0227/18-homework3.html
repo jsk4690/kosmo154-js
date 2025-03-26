@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            gap: 5px;
+            grid-template: 
+            'header header header' 1fr
+            'menu main top' 1fr
+            'menu main aside' 3fr
+            'menu main bottom' 1fr
+            'footer footer footer' 1fr / 2fr 6fr 2fr ;
+        }
+
+        .grid-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            color: black;
+            background-color: rgb(145, 211, 250);
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .menu {
+            grid-area: menu;
+        }
+
+        .main {
+            grid-area: main;
+        }
+
+        .top {
+            grid-area: top;
+        }
+
+        .aside {
+            grid-area: aside;
+        }
+
+        .bottom {
+            grid-area: bottom;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <header class="header grid-item">header</header>
+        <aside class="menu grid-item">menu</aside>
+        <main class="main grid-item">main</main>
+        <aside class="top grid-item">top</aside>
+        <aside class="aside grid-item">aside</aside>
+        <aside class="bottom grid-item">bottom</aside>
+        <footer class="footer grid-item">footer</footer>
+    </div>
+</body>
+</html>

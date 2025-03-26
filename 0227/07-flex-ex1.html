@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="default.css">
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            /* 위아래로 꽉 차게 */
+        }
+
+        .flex-item {
+            flex: 1 auto;
+            /* flex-grow를 1로 잡아서 컨텐츠를 화면 끝까지 채움 > 따라서 컨텐츠 9는 한 줄을 모두 차지 
+            width에 값을 주어도 위에서 flex-grow가 살아있음 */
+            /* basis: auto > flex-container에서 제공하는 flex-item의 최대 컨텐츠 크기 */
+        }
+
+        @media (min-width: 768px) {
+            .flex-container {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .flex-item {
+                width: 50%;
+                /* 각각의 칸의 width가 50 50 > 2*4+1 */
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .flex-item {
+                width: 30%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- div.flex-container>div.flex-item{$}*9 -->
+    <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+        <div class="flex-item">6</div>
+        <div class="flex-item">7</div>
+        <div class="flex-item">8</div>
+        <div class="flex-item">9</div>
+    </div>
+</body>
+</html>
