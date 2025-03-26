@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .active {
+            background-color: #cef;
+        }
+    </style>
+</head>
+<body>
+    <div id="myDiv" style="border: 1px solid #ccc; padding: 5px;">내용</div>
+    <button id="toggleClassBtn">클래스 토글</button>
+
+    <script>
+        const myDiv = document.getElementById("myDiv");
+        const toggleClassBtn = document.getElementById("toggleClassBtn");
+
+        // 버튼을 눌렀을 때 active 클래스 추가 및 삭제
+        // classList: 클래스를 추가 혹은 변경할 때 사용, 기존 클래스가 있어도 삭제하지 않고 추가함(단, 중복 추가는 불가능)
+        toggleClassBtn.addEventListener("click", function(){
+            myDiv.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>
