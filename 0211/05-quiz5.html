@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* table,tr,td에 입히는  스타일 */
+        table,
+        tr,
+        td,
+        th {
+            border: 1px solid gray;
+            /* 표의 테두리 - 1px 회색 실선 */
+            border-collapse: collapse;
+            /* 표 테두리와 셀 테두리 실선 합치기 */
+        }
+
+        /* th, td 태그에 입히는 스타일 */
+        th,
+        td {
+            width: 100px;
+            /* 셀 너비 100px */
+            padding: 5px;
+            /* 안쪽 여백 5px */
+        }
+
+        /* caption에 먹이는 스타일 */
+        caption {
+            font-size: 20px;
+            /* 폰트 크기를 20px로 */
+            margin: 10px;
+            /* 표 설명글 주변 바깥 여백을 10px */
+            font-weight: bold;
+            /* 표 설명글 글자를 굵게 */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- table>((caption>b{주요 SNS 서비스별 이용률(%)})+(tr>th*6)+(tr*2>(th+td*5))) -->
+    <table border="1" , width="100%" ; style="border-collapse: collapse; table-layout: fixed;">
+        <caption><b>주요 SNS 서비스별 이용률(%)</b></caption>
+        <tr>
+            <th> </th>
+            <th>페이스북</th>
+            <th>카카오스토리</th>
+            <th>밴드</th>
+            <th>인스타그램</th>
+            <th>트위터</th>
+        </tr>
+        <tr>
+            <th>2015년</th>
+            <td>77.1</td>
+            <td>58.3</td>
+            <td>32.4</td>
+            <td>16.7</td>
+            <td>22.1</td>
+        </tr>
+        <tr>
+            <th>2016년</th>
+            <td>73.8</td>
+            <td>51.0</td>
+            <td>40.1</td>
+            <td>28.1</td>
+            <td>14.7</td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <!-- <path d="M20,40 L80,40 L80,80 L20,40" stroke="green" fill="red" /> -->
+    <path d="M20,40 H80 V80 L20,40" stroke="green" />
+    <!-- <path d="M20,40 h60 v40 l-60,-40" stroke="green" /> 대문자는 절대 좌표, 소문자는 상대 좌표이므로 소문자는 되도록이면 이용하지 x -->
+</svg>

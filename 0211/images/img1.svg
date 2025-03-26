@@ -1,0 +1,5 @@
+<svg viewBox="0 0 200 100" 
+xmlns="http://www.w3.org/2000/svg">
+    <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" stroke-dasharray="7" fill="red" />
+    <circle cx="150" cy="50" r="40" stroke="green" stroke-width="4" stroke-dasharray="7" fill="yellow" />
+</svg>
