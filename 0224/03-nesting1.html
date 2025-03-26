@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .container {
+            padding: 20px;
+            background-color: whitesmoke;
+        } */
+
+        .container {
+            padding: 20px;
+            background-color: whitesmoke;
+
+            h1 {
+                color: #333;
+            }
+
+            p {
+                color: #666;
+            }
+
+        }
+
+        /* .container h1 {
+            color: #333;
+        }
+
+        .container p {
+            color: #666;
+        } */
+
+        /* .nested {
+            padding: 10px;
+            background-color: #CCCCCC;
+        } */
+
+        .nested {
+            padding: 10px;
+            background-color: #CCCCCC;
+
+            p {
+                color: black;
+                font-weight: bold;
+                &:hover {
+                    background-color: rgb(255 0 0 / 0.3);
+                }
+                /* nesting은 하위 선택자만 가능
+                자식이나 가상 선택자를 사용하는 경우는 nesting이 불가능하지만 앞에 &을 붙이면 가능 */
+            }
+        }
+
+        /* .nested p {
+            color: black;
+            font-weight: bold;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>CSS 네스팅에 오신 것을 환영합니다.</h1>
+        <p>이것은 컨테이너 안에 있는 문단입니다.</p>
+        <div class="nested">
+            <p>이것은 중첩된 문단입니다.</p>
+        </div>
+    </div>
+</body>
+
+</html>

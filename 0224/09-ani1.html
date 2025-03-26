@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes change-bg {
+            from {
+                background-color: blue;
+                border: 1px solid black;
+            }
+            to {
+                background-color: lightblue;
+                border-radius: 50%;
+            }
+        }
+
+        .tr1 {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            animation-name: change-bg;
+            animation-duration: 3s;
+            /* animation-direction: normal; */
+            /* animation-direction: reverse; */
+            animation-direction: alternate;
+            /* animation-direction: alternate-reverse; */
+            /* 반복하는 구간에서 애니메이션 효과를 반대로 바꿈. 단 iternation-count가 2 이상이어야 함 */
+            /* alternate-reverse: 반대 방향에서 출발해서 반대 방향으로 끝남 */
+            animation-iteration-count: 3;
+            /* 애니메이션이 끝나는 상황을 유지 ex) 3번이면 원 네모 원, 네모로 돌아가지 않고 원에서 끝남 */
+            /* animation-fill-mode: forwards; */
+            /* animation-fill-mode: backwards; */
+            /* both: 만약 from과 to 중 to에 가까우면, 가장 가까운 디자인 영역에 정지 */
+            animation-fill-mode: both;
+            /* 애니메이션 반복 횟수 */
+            /* animation-iteration-count: infinite; */
+        }
+    </style>
+</head>
+<body>
+    <div class="tr1"></div>
+</body>
+</html>

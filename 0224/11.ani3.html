@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes change-bg {
+            from {
+                background-color: blue;
+                border: 1px solid black;
+            }
+            to {
+                background-color: lightblue;
+                border-radius: 50%;
+            }
+        }
+
+        .tr1 {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            /* animation-name: change-bg;
+            animation-duration: 3s;
+            animation-direction: alternate;
+            animation-iteration-count: 3;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-in;
+            animation-delay: 3s; */
+            /* animation: name duration timing delay iteration direction fill */
+            animation: change-bg 3s ease-in 3s 3 alternate forwards;
+        }
+    </style>
+</head>
+<body>
+    <div class="tr1"></div>
+</body>
+</html>

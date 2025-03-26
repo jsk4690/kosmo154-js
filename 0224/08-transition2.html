@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 52px;
+        }
+
+        .tr1 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border: 1px solid black;
+            /* transition-property: width, height, background-color, transform;
+            transition-duration: 2s, 5s; */
+            /* transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+            transition: all 5s ease-in 2s;
+            /* transition: property duration timing-function delay */
+        }
+
+        .tr1:hover {
+            width: 200px;
+            height: 200px;
+            background-color: violet;
+            transform: rotate(180deg);
+        }
+
+        /* 마우스를 올렸을 시 일어나는 애니메이션 변화
+        width: 200px;
+        heigth: 200px;
+        background-color: violet;
+        rotate(180deg);
+        해당 애니메이션을 5s 동안 실행 */
+    </style>
+</head>
+<body>
+    <div class="tr1">
+        <h1>!</h1>
+    </div>
+</body>
+</html>

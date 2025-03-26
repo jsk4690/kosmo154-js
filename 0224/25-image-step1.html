@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 500px;
+            height: 600px;
+            background-image: url(./images/fox-cycle.jpg);
+            animation: run-fox 4s steps(8, start) infinite;
+            animation-direction: normal;
+        }
+
+        @keyframes run-fox {
+            0% {
+                background-position: 0 0
+            }
+
+            100% {
+                background-position: -4000px 0
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
