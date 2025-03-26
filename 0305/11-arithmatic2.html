@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1
+        console.log("1"+2);
+        // >> 12
+        // console.log(typeof ("1"+2)); >> 문자
+
+        // 2
+        console.log("5"-"2");
+        // >> 3
+        // console.log(typeof ("5"-"2")); >> 숫자
+
+        // 3
+        console.log(true+3);
+        // >> 4 (java에서 true=1, false=0)
+
+        // 4
+        console.log(9/0);
+        // >> infinity
+
+        // 5
+        console.log(4/2);
+        // >> 2
+        console.log(4/2.0);
+        // >> 2
+        console.log(4.0/2);
+        // >> 2
+        console.log(5/2);
+        // >> 2.5
+
+        // 6
+        console.log(3 + 5 * 2);
+        // >> 13 (곱셈, 나눗셈이 우선)
+        console.log((3 + 5) * 2);
+        // >> 16
+
+        // 7
+        console.log(4 + 3 - 2);
+        // >> 5
+        console.log(2 ** 3 ** 2);
+        // >> 512 (거듭제곱은 우에서 좌, 나머지는 좌에서 우로 연산)
+    </script>
+</body>
+</html>

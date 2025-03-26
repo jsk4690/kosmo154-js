@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1
+        var x1 = 3;
+        console.log(-x1); // -3
+
+        // 2
+        var x2 = "4";
+        console.log(typeof (-x2)); // number
+
+        // 3
+        var x3 = "3";
+        console.log(x3); // 3
+        console.log(typeof +(x3)); // number
+
+        //4
+        console.log(+true); // 1
+        console.log(+false); // 0
+        console.log(+null); // 0
+        console.log(+undefined); // NaN
+
+        // 5
+        var y1 = 3;
+        // 증감 연산자 특징: 연산이 앞에 나오면 연산 후 로직 수행
+        //                  연산이 뒤에 나오면 로직 수행 후 연산
+        console.log(++y1); // 4 => y1=y1+1
+        console.log(y1++); // 4
+        console.log(y1); // 5
+
+        var y2 = 5;
+        console.log(--y2); // 4
+        console.log(y2--); // 4
+        console.log(y2); // 3
+    </script>
+</body>
+</html>

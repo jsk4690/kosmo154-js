@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var a1 = 10 + "10";
+        // console.log(a1);
+
+        // var a2 = true + "10";
+        // console.log(a2);
+
+        // var a3 = true + 10;
+        // console.log(a3);
+
+        // var a4 = "42";
+        // console.log(typeof +a4);
+
+        // var n = 15;
+        // console.log(n.toString());
+        // console.log(n.toString(16));
+
+        // var n = 12.345
+        // console.log(n.toFixed(1))
+        // console.log(n.toFixed(3))
+
+        // console.log(n.toPrecision(1));
+        // console.log(n.toPrecision(3));
+
+        // console.log(String(15));
+        // console.log(String(true));
+
+        // console.log(parseInt("1010"));
+        // console.log(parseInt("16 volts", 10));
+        // console.log(parseInt("3a", 16));
+        // console.log(parseFloat("10.10"));
+
+        // console.log(Number("10.10"));
+        // console.log(Number(false));
+
+        // var n = 0;
+        // console.log(!!n);
+        // console.log(Boolean(n));
+
+        var v1 = parseInt(prompt("첫 번째 값"));
+        var v2 = parseInt(prompt("두 번째 값"));
+        // var sum = parseInt(v1+v2);
+        // alert(`연산 결과: ${sum}`);
+
+        // var minus = parseInt(v1-v2);
+        // alert(`${minus} : 연산 결과`);
+
+        // var multiple = parseInt(v1*v2);
+        // console.log(`${v1} 곱하기 ${v2}는 ${multiple} 입니다.`);
+
+        // var divide = parseInt(v1/v2);
+        // console.log(`${v1} 나누기 ${v2}는 ${divide} 입니다.`);
+
+        // var sum = parseInt(v1+v2);
+
+        // var result = (v1 > v2) ? "큽니다" : "작습니다";
+        // document.write(`<p>${v1}은 ${v2}보다 ${result}</p>`);
+
+        // var result1 = (v1 < v2) ? "<" : ">";
+        // document.write(`<p>${v1} ${result1} ${v2}`);
+
+        
+        var result2 = (v1 >= v2) ? "v1이 v2 이상" : "v1이 v2 미만";
+        var name1 = document.getElementById('v1').value;
+        var name2 = document.getElementById('v2').value;
+        document.write(`<input type="text" value="${name1}"><input type="text" value="${name2}"><p>${result2}</p>`);
+    </script>
+    <input type="text" name="v1" id="v1">
+    <input type="text" name="v2" id="v2">
+</body>
+</html>

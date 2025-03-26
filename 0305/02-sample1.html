@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="txt1" id="txt1">
+    <button id="btn1">버튼1</button>
+    <script>
+        document.getElementById("btn1").addEventListener("click", function(){
+            var txt1 = document.getElementById("txt1").value;
+            alert(txt1);
+        });
+    </script>
+   
+</body>
+</html>
