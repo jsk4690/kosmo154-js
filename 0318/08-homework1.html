@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="note">Old Note</div>
+
+    <script>
+        const note = document.getElementById("note");
+        const newNote = document.createElement("div");
+        newNote.textContent = "Note Start";
+        note.before(newNote);
+        console.log("note.previousElementSibling: ", note.previousElementSibling);
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="cardContainer">
+        <div class="card">
+            <p>카드 내용</p>
+            <button id="deleteBtn">Delete Card</button>
+        </div>
+    </div>
+
+    <script>
+        const deleteBtn = document.getElementById("deleteBtn");
+        const card = deleteBtn.parentElement;
+        card.parentElement.removeChild(card); // DOM에서 요소를 직접 삭제할 수 없기 때문에 삭제하고 싶을 땐 부모 요소에서 자식 요소를 제거해야 함
+
+        console.log("카드 요소 삭제됨");
+    </script>
+</body>
+</html>

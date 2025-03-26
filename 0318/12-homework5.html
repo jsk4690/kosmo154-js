@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <p>Good</p>
+    </div>
+
+    <script>
+        const main = document.getElementById("main");
+        const section = document.createElement("section");
+        section.textContent = "New Section";
+        main.appendChild(section);
+
+        console.log("main.lastElementChild: ", main.lastElementChild);
+    </script>
+</body>
+</html>
