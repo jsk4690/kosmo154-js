@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" id="myForm">
+        <input type="text" id="username" placeholder="이름 입력">
+        <button type="submit">제출</button>
+
+        <script>
+            // 폼 불러오기
+            const myForm = document.getElementById("myForm");
+            // 폼 제출 시 username이 비어있다면 alert 띄우기
+            myForm.addEventListener("submit", function() {
+                var username = document.getElementById("username").value;
+                if (username === "") {
+                    alert("이름을 입력하세요.");
+                }
+            });
+        </script>
+    </form>
+</body>
+</html>

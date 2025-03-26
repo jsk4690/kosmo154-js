@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="sourceDiv">복제할 내용</div>
+    <div id="targetDiv"></div>
+
+    <script>
+        // 원본 div 불러오기
+        const oldDiv = document.getElementById("sourceDiv");
+        // 새로운 div 불러오기
+        const newDiv = document.getElementById("targetDiv");
+        // 원본 복제하여 새로운 div에 삽입하기
+        const clone = oldDiv.cloneNode(true);
+        newDiv.appendChild(clone);
+    </script>
+</body>
+</html>

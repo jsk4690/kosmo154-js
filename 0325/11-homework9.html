@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="../0312/images/sudal.png" alt="이미지" id="myImage">
+
+    <script>
+        // 이미지에 마우스를 올릴 시
+        const image1 = document.getElementById("myImage");
+        image1.addEventListener("mouseover", function() {
+            image1.src="../0312/images/apple-bg.jpg";
+        });
+        image1.addEventListener("mouseout", function() {
+            image1.src="../0312/images/sudal.png";
+        });
+    </script>
+</body>
+</html>

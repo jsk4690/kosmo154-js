@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="parentList">
+        <h1>hi</h1>
+        <li>1Li</li>
+        <li>2Li</li>
+        <li>3Li</li>
+        <li>4Li</li>
+        <li>5Li</li>
+    </ul>
+
+    <script>
+        // ul 태그 불러오기
+        const parentList = document.getElementById("parentList");
+
+        // ul에 클릭 이벤트를 줬을 때
+        parentList.addEventListener("click", function(e) {
+            // 만약 parentList의 자식 요소의 태그 네임이 li라면 클릭 시 노란색이 되는 이벤트 적용
+            if (e.target.tagName.toLowerCase() === "li")
+            e.target.style.color = "yellow";
+        });
+    </script>
+</body>
+</html>
