@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 레이어는 뒤에 쓸수록 먼저 실행됨 > 우선 순번이 바뀜 */
+        @layer alert, normal, success;
+
+        @layer alert {
+            p {
+                color: red;
+            }
+
+            #p1 {
+                font-size: 2rem !important;
+            }
+        }
+
+        @layer success {
+            p {
+                color: green;
+                font-size: 1rem;
+            }
+        }
+
+        @layer normal {
+            p {
+                color: blue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p>안녕하세요 반갑습니다.</p>
+    <p id="p1">제 이름은 정수경입니다.</p>
+
+</body>
+
+</html>

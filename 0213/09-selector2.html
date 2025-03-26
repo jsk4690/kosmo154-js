@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1. 동일 선택자 형질 + 동일 속성 = 아래 있는 속성이 우선권을 가짐 */
+        p {
+            color: red;
+        }
+
+        p {
+            color: blue;
+        }
+
+        /* 2. 다른 선택자 형질 + 동일 속성 = 선택자의 범위에 따라서 우선적으로 적용될 속성이 결정됨 
+        id < class < tag < 전체 (범위가 작은 것부터 넓혀짐) */
+        /* #p3 {
+            color: green;
+        }
+        .pc3 {
+            color: blue;
+        }
+        p {
+            color: red;
+        } */
+        /* 3. !important 키워드가 속성에 존재할 시, 그 어떤 것보다 우선권을 가져간다.
+         다만 동일 속성 다른 선택자에 동일하게 !important가 있을 경우 기존의 성질 순서를 따라간다. */
+        #p3 {
+            color: green;
+        }
+
+        .pc3 {
+            color: blue;
+        }
+
+        p {
+            color: red !important;
+        }
+
+        /* 4. pc3와 pc4와 같은 동일 선택자, 다른 키워드에 동일 디자인을 적용하고 싶은 경우엔 그룹 선택자*/
+        .pc3, .pc4 {
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, nulla. Ea dignissimos, maiores facilis tempora
+        blanditiis qui laboriosam consectetur et iusto sapiente sint, eaque veniam ipsam minus repellendus, rem nostrum!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti odit perspiciatis ipsa quos. Doloribus,
+        quaerat enim cumque maxime quia consequatur pariatur voluptas rem, non corporis vitae numquam aliquid quas iure?
+    </p>
+    <p id="p3" class="pc3">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam veniam nobis accusantium tempore earum non
+        ipsam animi amet aliquid, deleniti, rem quidem excepturi hic pariatur asperiores voluptatibus at vero nihil.
+    </p>
+    <p class="pc4">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus fugiat itaque est veritatis magnam, nam dolore
+        optio vel. Nihil, libero quibusdam. Recusandae iure nesciunt aut inventore similique expedita earum pariatur?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae distinctio quis rem eius
+        consectetur dolore temporibus, suscipit assumenda harum hic omnis, doloremque consequuntur fugiat sint ad
+        molestias exercitationem placeat!
+    </p>
+</body>
+
+</html>

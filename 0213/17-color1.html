@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p1 {
+            /* color: rgb(255, 0, 0); */
+            /* color: rgba(255, 0, 0, 0.3); */
+            color: rgb(255 0 0 / 0.3);
+        }
+
+        .p2 {
+            /* 2부터 4까지는 투명도를 지정하기가 어려움 */
+            color: #E4080A;
+        }
+
+        .p3 {
+            /* 대충 색상을 보고 싶은 경우 > 이어지는 숫자가 두 개씩 동일해야 함 */
+            color: #0f0;
+        }
+
+        .p4 {
+            color: lightcoral;
+            /* 투명도: 0~1 */
+            opacity: 0.3;
+            /* opacity를 사용하면 다른 속성들도(폰트 굵기 등) 같이 있을 경우, 영향을 받음 */
+        }
+    </style>
+</head>
+
+<body>
+    <p class="p1">이것은 rgb로 표현한 색상입니다.</p>
+    <p class="p2">이것은 rgb로 표현한 색상입니다.</p>
+    <p class="p3">이것은 rgb로 표현한 색상입니다.</p>
+    <p class="p4">이것은 rgb로 표현한 색상입니다.</p>
+
+</body>
+
+</html>

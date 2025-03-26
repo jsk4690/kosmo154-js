@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 폰트 사이즈는 상위에 있는 태그에서 정의한 사이즈가 기준 */
+        .p1 {
+            font-size: 16px;
+        }
+        .p2 {
+            font-size: 2em;
+        }
+        .p3 {
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- p.p${강의에 오신 걸 환영합니다}*3 -->
+    <p>강의에 오신 걸 환영합니다</p>
+    <p class="p1">강의에 오신 걸 환영합니다</p>
+    <div style="font-size: 12px;">
+        <!-- p2는 위에 있는 12px = 1em이 기준 -->
+       <p class="p2">강의에 오신 걸 환영합니다</p> <!-- 24px -->
+        <!-- p3는 기준이 16px = 1rem-->
+       <p class="p3">강의에 오신 걸 환영합니다</p> <!-- 32px -->
+    </div>
+</body>
+</html>
