@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="nm" id="nm">
+    <button onclick="chk()">월 확인</button>
+
+    <script>
+        function chk() {
+            let month = parseInt(document.getElementById("nm").value);
+            if (month === 12) {
+                alert("12월입니다");
+            } else {
+                alert("12월이 아닙니다");
+            }
+        }
+    </script>
+</body>
+</html>

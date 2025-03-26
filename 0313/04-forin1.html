@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1
+        const obj1 = {
+            prop1 : "속성1",
+            prop : "속성2",
+            prop8 : "속성3",
+            prop4 : "속성4",
+        }
+
+        for(key in obj1) {
+            console.log(key); // >> prop1 prop prop8 prop4
+            console.log(obj1[key]); // >> 속성1 속성2 속성3 속성4
+        }
+
+        with(obj1) {
+            console.log(`${prop}`); // 속성2
+            console.log(`${prop1}`); // 속성1
+        }
+    </script>
+</body>
+</html>

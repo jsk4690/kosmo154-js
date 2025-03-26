@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">안녕하세요</p>
+    <img id="img">
+    <a id="a1">이동</a>
+    <input type="text" name="txt1" id="txt1">
+
+    <script>
+        console.dir(document.getElementById("p1"));
+        console.dir(document.getElementById("img"));
+        console.dir(document.getElementById("a1"));
+        console.dir(document.getElementById("txt1"));
+        document.getElementById("img").setAttribute("ttl", "asdf");
+        document.getElementById("a1").href = "http://www.naver.com";
+        document.getElementById("txt1").setAttribute("type", "number"); // 해당 속성 변경
+        document.getElementById("img").removeAttribute("ttl"); // 해당 속성 삭제
+        document.getElementById("txt1").hasAttribute("type"); // 해당 속성을 가지고 있는지
+    </script>
+</body>
+</html>

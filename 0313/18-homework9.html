@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="nm1" id="nm1">
+    <input type="text" name="nm2" id="nm2">
+    <button onclick="chk()">두 수 비교</button>
+
+    <script>
+        function chk() {
+            let a = parseInt(document.getElementById("nm1").value);
+            let b = parseInt(document.getElementById("nm2").value);
+            if (a > b) {
+                alert("a가 더 큽니다");
+            } else if (a === b) {
+                alert("a와 b가 같습니다");
+            } else {
+                alert("a가 더 작습니다");
+            }
+        }
+    </script>
+</body>
+</html>

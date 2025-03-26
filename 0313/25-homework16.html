@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="nm" id="nm">
+    <button onclick="chk()">정확한 값 비교</button>
+
+    <script>
+        function chk() {
+            let x = parseInt(document.getElementById("nm").value);
+            if (x === 100) {
+                alert("정확히 100");
+            } else {
+                alert("100이 아닙니다");
+            }
+        }
+    </script>
+</body>
+</html>

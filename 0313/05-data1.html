@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // [a]:[10], [b]:["abc"]
+        let a = 10;
+        let b = "abc";
+        b = false;
+        console.log(b); // false
+        let c = b;
+        console.log(c); // false
+        c = 20;
+        console.log(b); // c는 20으로 바뀌지만 b는 그대로 false >> b에는 영향이 없음
+
+    </script>
+</body>
+</html>

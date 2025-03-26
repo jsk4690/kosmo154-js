@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="nm" id="nm">
+    <button onclick="chk()">불합격 처리</button>
+
+    <script>
+        function chk() {
+            let score = parseInt(document.getElementById("nm").value);
+            if (score < 60) {
+                alert("불합격");
+            } else {
+                alert("합격");
+            }
+        }
+    </script>
+</body>
+</html>

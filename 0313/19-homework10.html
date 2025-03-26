@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="txt" id="txt">
+    <button onclick="chk()">관리자 확인</button>
+
+    <script>
+        function chk() {
+            let user = document.getElementById("txt").value;
+            if (user === "admin") {
+                alert("관리자");
+            } else {
+                alert("관리자가 아닙니다");
+            }
+        }
+    </script>
+</body>
+</html>

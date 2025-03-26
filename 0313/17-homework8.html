@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="nm" id="nm">
+    <button onclick="chk()">홀수 판별</button>
+
+    <script>
+        function chk() {
+            let num = parseInt(document.getElementById("nm").value);
+            if (num % 2 !== 0) {
+                alert("홀수");
+            } else {
+                alert("짝수");
+            }
+        }
+    </script>
+</body>
+</html>

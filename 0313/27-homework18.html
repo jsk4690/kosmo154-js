@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="nm" id="nm">
+    <button onclick="chk()">요일 확인</button>
+
+    <script>
+        function chk() {
+            let day = document.getElementById("nm").value;
+            if (day === "Monday") {
+                alert("월요일");
+            } else if (day === "Tuesday") {
+                alert("화요일");
+            } else if (day === "Wednesday") {
+                alert("수요일");
+            } else if (day === "Thursday") {
+                alert("목요일");
+            } else if (day === "Friday") {
+                alert("금요일");
+            } else if (day === "Saturday") {
+                alert("토요일");
+            } else if (day === "Sunday") {
+                alert("일요일");
+            } else {
+                alert("요일이 아닙니다");
+            }
+        }
+    </script>
+</body>
+
+</html>

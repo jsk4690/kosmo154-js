@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="nm" id="nm">
+    <button onclick="chk()">우수 성적 판별</button>
+
+    <script>
+        function chk() {
+            let score = parseInt(document.getElementById("nm").value);
+            if (score >= 90) {
+                alert("우수")
+            } else if (score <=60) {
+                alert("열등");
+            } else {
+                alert("분발하세요");
+            }
+        }
+    </script>
+</body>
+</html>

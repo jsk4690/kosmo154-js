@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="nm" id="nm">
+    <button onclick="chk()">10 이하 판별</button>
+
+    <script>
+        function chk() {
+            let number = parseInt(document.getElementById("nm").value);
+            if (number <= 10) {
+                alert("10 이하");
+            } else {
+                alert("10 초과");
+            }
+        }
+    </script>
+</body>
+</html>
