@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="content">Content Block</div>
+
+    <script>
+        // 기존 div 불러오기
+        const content = document.getElementById("content");
+        // 기존 요소 복제하기
+        const cloneContent = content.cloneNode(true);
+        // 복제본을 원본 뒤에 삽입하기
+        content.after(cloneContent);
+    </script>
+</body>
+</html>

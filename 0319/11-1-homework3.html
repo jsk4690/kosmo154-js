@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="title">Old Title</h2>
+
+    <script>
+        // 기존 h2 불러오기
+        const oldH2 = document.getElementById("title");
+        // 새 h2 요소 만들기
+        const newH2 = document.createElement("h2");
+        // 새 요소에 이름 붙이기
+        newH2.textContent = "New Title";
+        // 기존 요소를 새 요소로 교체하기
+        oldH2.replaceWith(newH2);
+    </script>
+</body>
+</html>

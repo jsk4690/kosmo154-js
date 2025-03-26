@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li class="item">Item A</li>
+    </ul>
+
+    <script>
+        // 기존 요소 불러오기
+        const oldItem = document.querySelector(".item");
+        // 기존 요소를 바탕으로 복제 요소 만들기
+        const newItem = oldItem.cloneNode(true);
+        // 복제 요소를 원본 요소 바로 앞에 삽입하기
+        oldItem.before(newItem);
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div class="card">
+            <button id="deleteBtn">삭제</button>
+        </div>
+    </div>
+
+    <script>
+        // 삭제해야 하는 card의 자식인 버튼 불러오기
+        const deleteBtn = document.getElementById("deleteBtn");
+        // 버튼의 부모인 card 불러오기
+        const card = deleteBtn.parentElement;
+        // DOM은 바로 삭제가 불가능하므로 card의 부모에서 자식인 card 제거하기
+        card.parentElement.removeChild(card);
+
+        console.log("card 삭제");
+    </script>
+</body>
+</html>

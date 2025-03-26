@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="left">Left</div>
+    <div id="right">Right</div>
+
+    <script>
+        // div left와 right 불러오기
+        const left = document.getElementById("left");
+        const right = document.getElementById("right");
+        // 새로운 div 생성
+        const newDiv = document.createElement("div");
+        // 새로운 div에 이름 붙이기
+        newDiv.textContent = "Center"
+        // 새로운 div를 left와 right 사이에 넣기
+        // left.after(newDiv);
+        right.before(newDiv);
+    </script>
+</body>
+</html>

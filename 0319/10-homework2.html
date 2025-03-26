@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li class="item">Item A</li>
+    </ul>
+
+    <script>
+        const originalItem = document.querySelector(".item");
+        const cloneItem = originalItem.cloneNode(true)
+        originalItem.before(cloneItem);
+
+        console.log("클론 요소 추가됨: ", cloneItem.textContent);
+
+
+        // const originalItem = document.querySelector(".item");
+        // const cloneItem = originalItem.cloneNode(true);
+        // originalItem.before(cloneItem);
+
+    </script>
+</body>
+</html>

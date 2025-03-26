@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent">
+        <div>Child1</div>
+        <div>Child2</div>
+        <div>Child3</div>
+    </div>
+
+    <script>
+        // parent 불러오기
+        const parent = document.getElementById("parent");
+        // 첫 번째 자식 불러오기
+        const firstChild = parent.firstElementChild;
+        // 새로운 div 만든 후 이름 붙이기
+        const newDiv = document.createElement("div");
+        newDiv.textContent = "Inserted Div";
+        // 새로운 div를 자식 요소 중 첫 번째 앞에 생성
+        parent.insertBefore(newDiv, firstChild);
+    </script>
+</body>
+</html>
