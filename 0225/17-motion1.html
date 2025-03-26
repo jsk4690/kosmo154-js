@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+        <!-- 움직임 경로를 시각화하기 위한 선 -->
+        <path d="M50,150 Q200,-50 350,150" fill="none" stroke="lightgray" />
+
+        <!-- 애니메이션 적용 요소 -->
+        <rect x="0" y="0" width="50" height="50" fill="blue">
+            <animateMotion dur="3s" repeatCount="indefinite" rotate="auto">
+                <mpath href="#motionPath" />
+            </animateMotion>
+        </rect>
+        <!-- <circle cx="0" cy="0" r="20" fill="blue">
+            <animateMotion dur="3s" repeatCount="indefinite" rotate="auto">
+                <mpath href="#motionPath" />
+            </animateMotion>
+        </circle> -->
+        <!-- 시작 지점이 path의 시작 지점으로 바뀜
+         rotate: auto > 경로에 따라 회전 -->
+
+        <!-- 움직임 경로 정의 -->
+        <path id="motionPath" d="M50,150 Q200,-50 350,150" fill="none" />
+    </svg>
+</body>
+
+</html>

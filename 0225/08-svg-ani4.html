@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <svg width="400" height="200" viewBox="0 0 400 200">
+        <circle cx="50" cy="100" r="20" fill="red">
+            <animate attributeName="cx" values="50;150;250;350" keyTimes="0;0.3;0.6;1" dur="4s" repeatCount="indefinite" calcMode="spline" keySplines="1 0 0 1;1 0 0 1;1 0 0 1;"/>
+            <!-- keyspline 속성의 베지어 곡선 제어점 개수는 values 속성 값 사이 개수와 맞아야 함 -->
+             <!-- cubic-bezier: x1, y1, x2, y2 
+              x1, x2: 0~1 사이의 값 -->
+        </circle>
+    </svg>
+</body>
+</html>

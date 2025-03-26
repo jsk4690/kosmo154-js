@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div><svg width="300" height="100">
+        <rect x="20" y="20" width="50" height="50" fill="blue">
+        <animate attributeName="x" from="20" to="230" dur="3s" 
+        
+                 repeatCount="indefinite" /></rect></svg></div>
+        <div><svg width="2000" height="100">
+        <rect x="20" y="20" width="50" height="50" fill="green">
+        <animate attributeName="x" from="20" to="210" dur="3s" 
+        
+                 repeatCount="indefinite" accumulate="sum" /></rect></svg></div>
+         <!-- 초록색은 additive에 sum을 추가해줌으로써 x=20에 from=20을 더해서 앞서가는 것을 볼 수 있음 
+          accumulate: 과거에 진행됐던 결과값이 누적돼서 들어감, 제한을 두지 않으면 무한으로 뻗어나감 -->
+</body>
+</html>

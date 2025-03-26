@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+        <!-- 먼저 scale 애니메이션을 정의 -->
+        <circle id="myCircle" cx="100" cy="100" r="50" fill="green">
+            <animate id="scaleAnim" attributeName="r" from="50" to="30" dur="2s" fill="freeze" />
+            <!-- scaleAnim이 끝난 후 fill 변경 -->
+             <set attributeName="fill" to="orange" begin="scaleAnim.end" />
+        </circle>
+    </svg>
+</body>
+
+</html>

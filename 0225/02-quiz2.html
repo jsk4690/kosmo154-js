@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .origin {
+            width: 400px;
+            height: 150px;
+            border: 1px solid black;
+            float: left;
+            margin: 40px;
+        }
+
+        .movex:hover {
+            transform: translateX(-50px);
+        }
+
+        .movey:hover {
+            transform: translateY(-50px);
+        }
+
+        .movexy:hover {
+            transform: translate(40px, 40px);
+        }
+    </style>
+</head>
+<body>
+    <!-- div.origin*3>div.move>img[src="images/car.png"] -->
+    <div class="origin">
+        <div class="movex"><img src="images/car.png" alt=""></div>
+    </div>
+    <div class="origin">
+        <div class="movey"><img src="images/car.png" alt=""></div>
+    </div>
+    <div class="origin">
+        <div class="movexy"><img src="images/car.png" alt=""></div>
+    </div>
+</body>
+</html>

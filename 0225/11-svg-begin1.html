@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <svg width="500" height="100" xmlns="http://www.w3.org/2000/svg">
+        <rect id="rect1" x="10" y="10" width="50" height="50" fill="tomato">
+        <!-- 절대 시간 값을 활용한 애니메이션 -->
+        <animate attributeName="fill" from="tomato" to="skyblue" begin="3s" dur="3s" end="6s" fill="freeze" />
+        </rect>
+        <text x="10" y="90" font-size="14">애니메이션은 3초 후에 시작되고, 6초 후에 종료됩니다.</text></svg>
+
+        <svg width="300" height="100" xmlns="http://www.w3.org/2000/svg">
+            <rect id="rect1" x="10" y="10" width="50" height="50" fill="tomato">
+            <animate attributeName="fill" from="tomato" to="skyblue" dur="2s" begin="click + 1s" end="mouseout" fill="freeze" /></rect>
+            <text x="10" y="90" font-size="14">사각형을 클릭하고, 마우스를 빼 보세요!</text></svg>            
+</body>
+</html>

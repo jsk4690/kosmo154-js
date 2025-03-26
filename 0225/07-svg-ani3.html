@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <svg width="400" height="200">
+        <rect x="0" y="50" width="50" height="50" fill="blue">
+            <!-- <animate attributeName="x" from="0" to="350" dur="5s" calcMode="discrete" repeatCount="indefinite" /> -->
+            <animate attributeName="x" values="0;100;150;200;350;" dur="5s" calcMode="linear" repeatCount="indefinite" />
+            <!-- linear는 각각의 이동 속도마다 차이가 있지만, paced는 모두 균일함 -->
+        </rect>
+    </svg>
+
+    <svg width="200" height="200">
+        <circle cx="100" cy="100" r="50">
+        <animate attributeName="fill" values="red;yellow;green;blue" dur="4s" calcMode="discrete" repeatCount="indefinite" />
+        </circle></svg>        
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <svg width="500" height="300" xmlns="http://www.w3.org/2000/svg">
+        <!-- 첫 번째 애니메이션 대상 요소 -->
+        <rect id="rect1" x="10" y="10" width="50" height="50" fill="tomato">
+            <animate id="anim1" attributeName="x" from="10" to="440" dur="3s" begin="click" repeatCount="2"
+                fill="freeze" />
+        </rect>
+        <!-- 두 번째 애니메이션 대상 요소: 애니메이션1이 실행되면 같이 실행 -->
+        <circle id="circle1" cx="60" cy="200" r="20" fill="limegreen">
+            <animate id="anim2" attributeName="fill" from="limegreen" to="orange" dur="2s" begin="anim1.beginEvent" 
+        
+                fill="freeze" />
+        </circle>
+        <!-- 세 번째 애니메이션 대상 요소: 애니메이션1이 끝나면 실행 -->
+        <circle id="circle2" cx="150" cy="200" r="20" fill="skyblue">
+            <animate id="anim3" attributeName="cx" from="150" to="350" dur="2s" begin="anim1.endEvent" fill="freeze" />
+        </circle>
+        <!-- 네 번째 애니메이션 대상 요소: 애니메이션1을 반복했을 때 실행 -->
+        <rect id="rect2" x="10" y="100" width="50" height="50" fill="purple">
+            <animate id="anim4" attributeName="x" from="10" to="440" dur="3s" begin="anim1.repeatEvent" fill="freeze" />
+        </rect>
+        <text x="10" y="240" font-size="14">
+
+            첫 번째 사각형을 클릭하여 애니메이션을 시작하세요!</text>
+    </svg>
+
+</body>
+
+</html>

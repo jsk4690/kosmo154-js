@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="75" width="50" height="50" fill="blue">
+            <animateTransform attributeName="transform" type="translate" from="0 0" to="300 0" dur="4s"
+                repeatCount="indefinite" />
+            <!-- x축으로 300만큼 4초 동안 이동 -->
+        </rect>
+    </svg>
+
+
+    <!-- <animateTransform attributeName="transform" type="translate" from="0 0" to="-50 -50" dur="4s" repeatCount="indefinite" /> -->
+    <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="30" fill="green">
+            <animateTransform attributeName="transform" type="scale" from="1 1" to="2 3" dur="3s" />
+        </circle>
+    </svg>
+
+
+    <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="100,10 40,190 190,60 10,60 160,190" fill="orange">
+    <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="5s" repeatCount="indefinite"/>
+        </polygon>
+    </svg>
+
+
+    
+    <svg width="250" height="200" xmlns="http://www.w3.org/2000/svg">
+        <rect x="50" y="50" width="150" height="100" fill="purple">
+            <animateTransform attributeName="transform" type="skewX" from="0" to="30" dur="3s" repeatCount="indefinite"
+                additive="sum" />
+        </rect>
+    </svg>
+    <svg width="250" height="200" xmlns="http://www.w3.org/2000/svg">
+        <rect x="50" y="50" width="150" height="100" fill="red">
+            <animateTransform attributeName="transform" type="skewY" from="0" to="-30" dur="3s" repeatCount="indefinite"
+                additive="sum" />
+        </rect>
+    </svg>
+</body>
+
+</html>

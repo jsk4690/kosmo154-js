@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <svg viewBox="0 0 400 100" width="400" height="100">
+        <rect x="0" y="25" width="50" height="50" fill="orange">
+            <animate attributeName="x" from="0" by="100" dur="5s" />
+            <!-- to가 by보다 우선 적용되기 때문에 to가 400이고 by가 25면 by가 먹히지 않음 -->
+
+        </rect>
+    </svg>
+</body>
+</html>
