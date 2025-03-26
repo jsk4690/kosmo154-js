@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- input:number#num1[name="num1"]+button#btn -->
+    <input type="number" name="num1" id="num1">
+    <button id="btn">출력</button>
+    <script>
+        document.getElementById("btn").addEventListener("click", function(){
+            var num = parseInt(document.getElementById("num1").value);
+
+            var result = "";
+
+            // if (num > 10) {
+            //     result = '입력값은 10보다 큽니다';
+            // }
+
+            // if (num <= 10) {
+            //     result = "입력값은 10보다 작거나 같습니다";
+            // }
+
+            if (num > 10) {
+                console.log("10보다 크다는 알림");
+                result = '입력값은 10보다 큽니다';
+            } else {
+                console.log("10보다 작거나 같다는 알림");
+                result = "입력값은 10보다 작거나 같습니다";
+            }
+
+            // 삼항 연산자도 사용 가능하지만 다른 조건을 추가할 수 없음 >> 모든 로직을 다 삼항 연산자로 해결할 수 없음
+            // result = (num > 10) ? '입력값은 10보다 큽니다' : "입력값은 10보다 작거나 같습니다";
+
+            alert(result);
+        });
+    </script>
+</body>
+</html>

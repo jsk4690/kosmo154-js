@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>사칙연산 퀴즈</h1>
+    <p id="p1"></p>
+    <input type="number" name="" id="num">
+    <button id="btn">제출</button>
+    <p id="p2"></p>
+
+    <script>
+        document.getElementById("btn").addEventListener("click", function(){
+            var number1 = Math.floor(Math.random()*20)+1;
+            var number2 = Math.floor(Math.random()*20)+1;
+            var num = parseInt(document.getElementById("num").value);
+            var result = "";
+            
+            
+            if (number1 + number2 === num) {
+            result = "정답입니다";
+            } else {
+            result = "오답입니다";
+            }
+        document.getElementById("p1").textContent = `문제: ${number1} + ${number2} = ?`;
+        document.getElementById("p2").textContent = result;
+        });
+    </script>
+</body>
+</html>

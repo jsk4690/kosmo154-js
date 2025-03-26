@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>숫자 맞추기 게임</h1>
+    <p>1부터 100 사이의 숫자를 맞춰보세요.</p>
+    <input type="number" name="" id="num">
+    <button id="btn">제출</button>
+    <div id="div1"></div>
+
+    <script>
+        document.getElementById("btn").addEventListener("click", function(){
+            var number = parseInt((document.getElementById("num").value));
+            var com = Math.floor(Math.random()*100)+1;
+            var result = "";
+            if (number > com) {
+                result = "너무 큽니다.";
+            } else if (number === com) {
+                result = "축하합니다! 맞추셨습니다.";
+            } else {
+                result = "너무 작습니다.";
+            }
+        document.getElementById("div1").textContent = result;
+        });
+    </script>
+</body>
+</html>
